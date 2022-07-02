@@ -1,0 +1,12 @@
+.navitems {
+	padding: 12px;
+}
+
+.navicon {
+	color: white;
+}
+
+.box1 {
+	background-image: url("../images/Home.jpg");
+	background-size: cover;
+}
