@@ -1,0 +1,7 @@
+<div style="text-align: center;">
+    <ng-content select=".product"></ng-content>
+    <ul class="list-group" *ngFor="let pdts of products">
+        <li class="list-group-item">{{pdts.name}}</li>
+    </ul>
+    <ng-content select=".product"></ng-content>
+</div>

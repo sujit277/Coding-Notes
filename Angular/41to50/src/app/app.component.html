@@ -1,0 +1,36 @@
+<!-- Reactive Form validations -->
+<form [formGroup] = "Loginform" (ngSubmit)="Update()">
+  <input type = "text" placeholder="Enter Your Name" name = "username" formControlName= "username"/>
+  <br/>
+  <span *ngIf ="username && username.invalid && username.touched">This field is not Valid</span>
+  <br/>
+  <input type = "text" placeholder="Enter Your Password" name = "password" formControlName= "password"/>
+  <br/>
+  <span *ngIf ="password && password.invalid && password.touched">This field is not Valid</span>
+  <br/>
+  <button type="submit" [disabled] = "Loginform.invalid">Login</button>
+</form>
+
+
+<!-- Custom Attribute Directives -->
+<h1 appRedel>Sujit Kumar Verma</h1>
+
+
+<!-- Different Routes of Navbar-->
+<h1>Sujit Kumar Verma</h1>
+<a routerLink="/home">Home</a>
+<br/>
+<a routerLink="/user">User</a>
+<br/>
+<a  routerLink="/about">About</a>
+<router-outlet></router-outlet>
+
+
+
+<!-- Using Service for Accessing Data -->
+<ul>
+  <li *ngFor = "let x of user">
+    {{x.Name}}
+  </li>
+</ul>
+<app-footer></app-footer>

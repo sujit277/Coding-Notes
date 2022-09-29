@@ -1,0 +1,21 @@
+<h1 style="text-align: center;">ngOnChanges and ngOnCheck</h1>
+<div class="row">
+    <div class="col-6 mx-auto mt-5">
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">UserName</label>
+                <input type="text" class="form-control" id="username" (blur)="handleData($event)" />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" name="email" [(ngModel)]="email" />
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" class="form-control"  name="password" id="password" [(ngModel)]="password" />
+            </div>
+            <button type="button" class="btn btn-primary" (click)="updateDetail()">Submit</button>
+        </form>
+    </div>
+</div>
+<app-child [parentData]="data" [product]="product"></app-child>

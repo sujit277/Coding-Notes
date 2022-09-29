@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/show_contacts.css}" />
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light"
+		style="background-color: #2874F0;">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+
+					<li class="nav-item navitems"><a class="nav-link box2" href=""><strong
+							class="navicon">Home</strong></a></li>
+					<li class="nav-item navitems"><a class="nav-link box2" href=""><strong
+							class="navicon"><span th:text="${user.name}"></span></strong></a></li>
+					<li class="nav-item navitems"><a class="nav-link box2"
+						href="/logout"><strong class="navicon">Logout</strong></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container-fluid">
+		<div class="row" style="height: 800px">
+			<div class="col-2 box7 mt-5">
+				<h5 style="text-align: center" class="box9">
+					<a th:href="@{/dashboard}" class="box10">Home</a>
+				</h5>
+				<h5 style="text-align: center" class="box9">
+					<a th:href="@{/show_contacts/0}" class="box10">View Contacts</a>
+				</h5>
+				<h5 style="text-align: center" class="box9">
+					<a th:href="@{/add_contacts_form}" class="box10">Add Contact</a>
+				</h5>
+				<h5 style="text-align: center" class="box9">
+					<a href="" class="box10">Your Profile</a>
+				</h5>
+				<h5 style="text-align: center" class="box9">
+					<a href="" class="box10">Settings</a>
+				</h5>
+				<h5 style="text-align: center" class="box9">
+					<a href="" class="box10">Logout</a>
+				</h5>
+			</div>
+			<div class="col-9 offset-1 box11 mt-5">
+
+				<h1 style="text-align: center" class="mb-3 mt-3">Contact
+					Details</h1>
+
+				<table class="table table-success table-striped">
+					<thead>
+						<tr>
+							<th scope="col">ID</th>
+							<th scope="col">Name</th>
+							<th scope="col">Email</th>
+							<th scope="col">Phone</th>
+							<th scope="col">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr th:each="c:${contacts}">
+							<th scope="row" th:text="${'SCMUSER'+c.cId}"></th>
+							<td th:text="${c.firstName}"></td>
+							<td><a th:href="@{'/contact_details/'+${c.cId}}"><span
+									th:text="${c.email}"></span></a></td>
+							<td th:text="${c.phone}"></td>
+							<td>
+								<button class="btn btn-danger btn-sm">Delete</button>
+								<button class="btn btn-primary btn-sm">Update</button>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li th:if="${currentPage!=0}" class="page-item"><a
+							th:href="@{'/show_contacts/'+${currentPage-1}}" class="page-link">Previous</a></li>
+
+						<li th:classappend="${currentPage==i-1?'active':''}"
+							th:each="i:${#numbers.sequence(1,totalPages)}" class="page-item"><a
+							th:href="@{'/show_contacts/'+${i-1}}" class="page-link"><span
+								th:text="${i}"></span></a></li>
+
+						<li th:if="${currentPage+1!=totalPages}" class="page-item"><a
+							th:href="@{'/show_contacts/'+${currentPage+1}}" class="page-link">Next</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{Css/Style.css}">
+</head>
+<body>
+	<div class="container">
+		<h1>Sujit Kumar Verma</h1>
+		<h1>My Company Name is EPAM Systems</h1>
+	</div>
+	<script th:src="@{/Js/Test.js}"></script>
+</body>
+</html>
