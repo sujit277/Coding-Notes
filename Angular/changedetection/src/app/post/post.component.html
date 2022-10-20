@@ -1,0 +1,16 @@
+<div style="text-align: center;">
+    <h2 *ngFor="let item of postData">
+        {{item.name}}
+    </h2>
+    <button (click)="changeObjectValue()">Change Value</button>
+    <input type="text" [(ngModel)]="name">
+    {{name}}
+</div>
+<br>
+
+<div style="text-align: center;">
+    <h2>{{details.name}}</h2>
+    <h2>{{details.company}}</h2>
+    <h2>{{details.city}}</h2>
+</div>
+<app-postchild [detailsData]="details"></app-postchild>

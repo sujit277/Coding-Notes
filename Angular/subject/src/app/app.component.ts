@@ -22,7 +22,7 @@ export class AppComponent implements OnInit{
     observable.subscribe(d=>console.log(d)); */
 
 
-    /* //Subjects
+    //Subjects
 
     const subject = new Subject();
 
@@ -33,18 +33,18 @@ export class AppComponent implements OnInit{
     subject.subscribe(d =>console.log(d));
 
     subject.next(Math.random());
- */
+
 
     //Subjects can act as Observale and Oberser both
     //ajax method we are using here to make a API call
 
-    const subject = new Subject();
+    /* const subject = new Subject();
     const data = ajax('https://jsonplaceholder.typicode.com/users');
     
     subject.subscribe(d => console.log(d));
     subject.subscribe(d => console.log(d));
 
-    data.subscribe(subject);
+    data.subscribe(subject); */
 
 
 

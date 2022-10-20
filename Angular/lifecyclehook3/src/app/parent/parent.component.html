@@ -1,0 +1,7 @@
+<div style="text-align: center;">
+    <h1>Parent Component</h1>
+    <input type="text" (blur)="handleData($event)" />
+    <app-child [parentData]="data">
+        <h1 #child>This is Child Content from Parent</h1>
+    </app-child>
+</div>
