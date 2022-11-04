@@ -31,8 +31,9 @@ export class AppComponent implements OnInit{
 
     //Subscriber 2
     subject.subscribe(d =>console.log(d));
-
     subject.next(Math.random());
+
+    
 
 
     //Subjects can act as Observale and Oberser both
@@ -41,11 +42,9 @@ export class AppComponent implements OnInit{
     /* const subject = new Subject();
     const data = ajax('https://jsonplaceholder.typicode.com/users');
     
+    data.subscribe(subject);
     subject.subscribe(d => console.log(d));
-    subject.subscribe(d => console.log(d));
-
-    data.subscribe(subject); */
-
+    subject.subscribe(d => console.log(d)); */
 
 
   }

@@ -10,7 +10,7 @@ import { PostServiceService } from '../services/post-service.service';
 export class PostComponent implements OnInit {
 
   postData!: any;
-  name = "Iron Man";
+
   details = {
     name: "Sujit Kumar Verma",
     company: "EPAM Systems",
@@ -21,19 +21,29 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData();
+    //this.ref.detach();
   }
 
   getData() {
     this.postService.getPostData().subscribe((data: any) => {
       this.postData = data;
-      this.ref.detectChanges();
+      //this.ref.detectChanges();
+      //this.ref.reattach();
     })
   }
 
-  changeObjectValue(){
-    this.details.name = "Chirs Hemtworth",
+
+  changeObjectValue() {
+   /*  this.details.name = "Chirs Hemtworth",
     this.details.company = "God of Thunder",
-    this.details.city = "Australia"
+    this.details.city = "Australia" */
+    this.details = {
+      name: "Priyanka Suman",
+      company: "ADP",
+      city: "Bokaro Steel City"
+    }
   }
+
+  /* Input output event handler ,Async Pipe */
 
 }

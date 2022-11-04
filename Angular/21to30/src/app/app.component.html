@@ -1,31 +1,17 @@
 <!-- Nested For Loop -->
-<!-- <h1>Good Morning Sujit Kumar Verma</h1>
 <ul *ngFor = "let user of users">
   <li>{{user.Name}}</li>
-  <li>{{user.Company}}</li>
+  <li>{{user.Company}}</li>`
   <ul *ngFor = "let items of user.Balance">
     <li>{{items}}</li> 
   </ul>
-</ul> -->
+</ul>
 
 
 <!-- Style Binding -->
-<!-- <h1 [style.color]="color">Sujit Kumar Verma</h1>
-<button (click)="Update()">Click Me </button> -->
+<h1 [style.color]="color">Sujit Kumar Verma</h1>
+<button (click)="updateColor()">Change Color</button>
 
-
-<!-- Template Driven Angular Form -->
-<h1>Registration Website</h1>
-<form #rgform="ngForm" (ngSubmit)="getdata(rgform.value)">
-  <input type="text" ngModel name="User" placeholder="Enter Your Name" />
-  <br />
-  <input type="text" ngModel name="Email" placeholder="Enter Your Email" />
-  <br />
-  <input type="text" ngModel name="Password" placeholder="Enter Your Password" />
-  <br />
-  <button type="submit">Submit</button>
-  <button>Anjali</button>
-</form>
 
 <!--Toggle for Hinding and Showing Component -->
 <h1 *ngIf = "Display">Welcome to EPAM Systems</h1>

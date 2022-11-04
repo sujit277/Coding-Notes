@@ -8,13 +8,13 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 export class ChildComponent implements OnInit{
 
   constructor() { }
-  @ViewChild("salary") element!:ElementRef
+  @ViewChild("salary") element!:ElementRef;
   ngOnInit(): void {
   }
   
   childMethod(){
     console.log("Executing method of Child Component");
-    alert("Hello Sujit")
+    alert("Hello Sujit");
   }
 
 }

@@ -8,7 +8,6 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 export class ChildComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
 
   @Input() parentData!: string;
-  @ViewChild('sujit') sujit!: ElementRef
   @ContentChild('child') contentChild!: ElementRef;
   constructor() {
     console.log('Constructor Executed');

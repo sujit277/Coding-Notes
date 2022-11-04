@@ -4,12 +4,11 @@ import { Input } from '@angular/core';
   selector: 'app-postchild',
   templateUrl: './postchild.component.html',
   styleUrls: ['./postchild.component.css'],
-  changeDetection:ChangeDetectionStrategy.Default
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class PostchildComponent implements OnInit {
 
   @Input() detailsData:any;
-  name = "Hulk";
 
   constructor() { }
 

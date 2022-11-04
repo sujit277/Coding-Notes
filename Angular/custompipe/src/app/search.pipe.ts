@@ -1,8 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'search',
-  pure: false
+  name: 'search'
 })
 export class SearchPipe implements PipeTransform {
 
@@ -12,9 +11,7 @@ export class SearchPipe implements PipeTransform {
       return value;
     }
 
-    return value.filter((data: any) => {
-      return (data.name.indexOf(args) > -1);
-    })
+    return value.filter((data: any) => data.name.indexOf(args) > -1)
   }
 
 }

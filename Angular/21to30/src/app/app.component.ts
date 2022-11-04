@@ -8,26 +8,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '21to30';
-  /* users = [{Name:"Sujit",Company:"EPAM",Balance:[200,300]},
+  
+  users = [{Name:"Sujit",Company:"EPAM",Balance:[200,300]},
   {Name:"Anjali",Company:"Accenture",Balance:[200,300]},
   {Name:"Chandani",Company:"Mindtree",Balance:[200,300]},
-  {Name:"Puja",Company:"IBM",Balance:[200,300]}] */
+  {Name:"Puja",Company:"IBM",Balance:[200,300]}]
 
-  /* color = "green";
-  Update()
+  color = "green";
+  Display = true;
+  data = 10;
+
+  updateColor()
   {
     this.color = "red";
-  } */
-   getdata(data:any)
-  {
-    console.warn(data);
   } 
-  Display = true;
+  
   toggle()
   {
     this.Display = !(this.Display);
   }
-  data = 10;
+  
   update()
   {
     this.data = Math.random();

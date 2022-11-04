@@ -31,6 +31,7 @@ describe('PostsComponent', () => {
 
     await TestBed.configureTestingModule({
       declarations: [PostsComponent],
+      imports:[HttpClientModule],
       providers: [{
         provide: PostService,
         useValue: mockPostService,
@@ -41,7 +42,7 @@ describe('PostsComponent', () => {
 
     fixture = TestBed.createComponent(PostsComponent);
     component = fixture.componentInstance;
-    a = TestBed.inject( mockPostService);
+    a = TestBed.inject(mockPostService); 
     fixture.detectChanges();   
   });
 

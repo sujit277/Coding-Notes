@@ -8,7 +8,7 @@ import { AfterContentInit, Component, ContentChild, ElementRef, Input, OnInit} f
 export class ProductwidgetComponent implements OnInit,AfterContentInit {
 
   @Input() products!:any; 
-  @ContentChild("head")header!:ElementRef;
+  @ContentChild("head") header!:ElementRef;
   constructor() { }
 
   ngOnInit(): void {

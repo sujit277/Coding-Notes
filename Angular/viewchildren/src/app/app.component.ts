@@ -16,6 +16,7 @@ export class AppComponent implements OnInit,AfterViewInit{
   }
   
   ngAfterViewInit(): void {
+    console.log(this.element);
     this.element.first.nativeElement.style.color ="red";
     this.element.last.nativeElement.style.color="green";
   }

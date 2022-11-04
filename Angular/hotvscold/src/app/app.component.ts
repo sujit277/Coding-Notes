@@ -28,8 +28,8 @@ export class AppComponent implements OnInit {
     }); */
 
     /* The data is produced inside the Observable, making it cold. We have two 
-    subscriptions which subscribe more or less at the same time. Since the 
-    Observable does a new execution for every subscriber and the Observable 
+    subscriptions which subscribe at the same time. Since the 
+    Observable creates a new execution for every subscriber and the Observable 
     generates a random number, the data the subscriber receives is different.  */
 
 

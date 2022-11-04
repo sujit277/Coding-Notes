@@ -9,17 +9,12 @@ export class AppComponent {
   title = '11to20';
   Display = "";
   Sujit = "Sujit Kumar Verma";
-
-  // Click Event on Button Click
-
-  ClickEvent()
-  {
-    alert("You Clicked on button");
-    console.warn("Hello");
-  }
-
+  Show = false;
+  color = "yellow";
+  Names = ["Sujit", "Puja", "Chandani","Anjali"];
+  Count = 0;
+  
   // Input Printing on giving input
-
   getdata(Name:string)
   {
     console.warn(Name);
@@ -27,14 +22,9 @@ export class AppComponent {
   }
 
   // Incrementing count value on button click
-
-  Count = 0;
   Buttonclick()
   {
     this.Count++;
   } 
-  Show = false;
-  color = "yellow";
-  Names = ["Sujit", "Puja", "Chandani","Anjali"];
 
 }

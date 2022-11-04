@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl,FormGroup} from "@angular/forms";
+import { FormControl, FormGroup } from "@angular/forms";
 
 
 @Component({
@@ -10,20 +10,19 @@ import {FormControl,FormGroup} from "@angular/forms";
 export class AppComponent {
   title = '31to40';
   name = "EPAM Systems"
-
-  /* getvalue(item:string)
-  {
-    console.warn(item);
-  } */
   Name = "Sujit Kumar Verma";
-  /* Today = Date(); */
+  Today = Date();
 
-Loginform = new FormGroup({
-  username : new FormControl(''),
-  password : new FormControl('')
-}); 
-Update()
-{
-  console.warn(this.Loginform.value);
-}
+  Loginform = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl('')
+  });
+
+  getvalue(item: string) {
+    console.warn(item);
+  }
+  
+  Update() {
+    console.warn(this.Loginform.value);
+  }
 }

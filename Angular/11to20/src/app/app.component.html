@@ -1,9 +1,14 @@
-<!-- <h1>Hello World</h1>
-<button (click) = "ClickEvent()" >Click</button>
+<!-- Template Reference Variable -->
 <input type = "text" #input1 (keyup) ="getdata(input1.value)" placeholder ="Enter Your value" />   
 <h2> The Value is - {{Display}} </h2>
+
+
+<!-- Incrementing Count on Button Click   -->
 <button (click) = "Buttonclick()">Click to Increase</button>
 <h1>No of Clicks : {{Count}}</h1>
+
+
+<!-- Applying Internal Style to HTML Element -->
 <style>
   .Heading
   {
@@ -11,7 +16,7 @@
     background-color: cadetblue;
   }
 </style>
-<h1 class = "Heading">Sujit Kumar Verma</h1> -->
+<h1 class = "Heading">Sujit Kumar Verma</h1>
 
 
 <!-- Property binding -->
@@ -19,38 +24,52 @@
 
 
 <!-- If Else Block Condition -->
-<!-- <h1>Hello</h1>
-<ng-container *ngIf = "Show; then Ifblock else Elseblock">Sujit Kumar Verma</ng-container>
+<ng-container *ngIf="Show; then Ifblock else Elseblock"></ng-container>
 <ng-template #Ifblock>
-  <h1>Company Amazon</h1>
+  <div>
+    <h1>Company Amazon</h1>
+  </div>
 </ng-template>
 <ng-template #Elseblock>
-  <h1>Company Google</h1>
-</ng-template> -->
-
+  <div>
+    <h1>Company Google</h1>
+  </div>
+</ng-template>
 
 
 <!-- Mulitple Contion (ElseIf) -->
-<!-- <ng-template [ngIf]="color=='red'">
+<div *ngIf="color=='red'">
+  <h1> Google </h1>
+</div>
+<div *ngIf="color=='green'">
+  <h1> Amazon </h1>
+</div>
+<div *ngIf="color=='yellow'">
+  <h1> Microsoft </h1>
+</div>
+
+<!-- Mulitple Contion (ElseIf) Using ng-template-->
+<ng-template [ngIf]="color=='red'">
   <h1> Google </h1>
 </ng-template>
 <ng-template [ngIf]="color=='green'">
   <h1> Amazon </h1>
 </ng-template>
-<ng-template [ngIf]="color=='blue'">
+<ng-template [ngIf]="color=='yellow'">
   <h1> Microsoft </h1>
-</ng-template> -->
+</ng-template>
 
 
 <!-- Switchcase Condition-->
-<!-- <div [ngSwitch] = "color">
-  <h1 *ngSwitchCase = "'green'">Google</h1>
-  <h1 *ngSwitchCase = "'red'">Amazon</h1>
-  <h1 *ngSwitchCase = "'yellow'">Salesforce</h1>
-  <h1 *ngSwitchCase = "'blue'">DE Shaw</h1>
-</div> -->
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'green'">Google</h1>
+  <h1 *ngSwitchCase="'red'">Amazon</h1>
+  <h1 *ngSwitchCase="'yellow'">Salesforce</h1>
+  <h1 *ngSwitchCase="'blue'">DE Shaw</h1>
+  <h1 *ngSwitchDefault>DE Shaw</h1>
+</div>
 
 
 <!-- For Loop Condition -->
 <h1>Sujit Kumar Verma</h1>
-<h1 *ngFor = "let items of Names"> Name is : {{items}}</h1>
+<h1 *ngFor="let items of Names"> Name is : {{items}}</h1>

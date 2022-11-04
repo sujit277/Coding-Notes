@@ -25,7 +25,7 @@ export class AppComponent implements OnInit{
   updateDetail(){
     //Creating new Object of Product for new Reference
     //this.product = new Product();
-    this.product.email = this.email
+    this.product.email = this.email;
     this.product.password = this.password;
   }
 

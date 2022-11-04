@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     const $asyncSubject = new AsyncSubject();
     $asyncSubject.next("1");
     $asyncSubject.next("2");
-    //$asyncSubject.complete();
+    $asyncSubject.complete();
 
     $asyncSubject.subscribe({
       next: (msg) => {
@@ -24,9 +24,10 @@ export class AppComponent implements OnInit {
       }
     })
 
-    $asyncSubject.complete();
+    
     $asyncSubject.next("3");
     $asyncSubject.next("4");
+    $asyncSubject.complete();
 
     $asyncSubject.subscribe({
       next: (msg) => {
