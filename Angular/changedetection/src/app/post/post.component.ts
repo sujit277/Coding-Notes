@@ -21,14 +21,17 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData();
-    //this.ref.detach();
+    this.ref.detach();
+    //this.ref.markForCheck();
   }
 
   getData() {
     this.postService.getPostData().subscribe((data: any) => {
       this.postData = data;
       //this.ref.detectChanges();
-      //this.ref.reattach();
+      this.ref.reattach();
+      //this.ref.checkNoChanges();
+      //this.ref.markForCheck();
     })
   }
 
