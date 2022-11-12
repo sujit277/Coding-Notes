@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HoverfoucsDirective } from './hoverfoucs.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HoverfoucsDirective
   ],
   imports: [
     BrowserModule,

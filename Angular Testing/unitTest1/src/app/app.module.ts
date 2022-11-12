@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FilterDataPipe } from './filter-data.pipe';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilterDataPipe,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
