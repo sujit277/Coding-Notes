@@ -1,0 +1,6 @@
+<div style="text-align: center;">
+  <h1>Angular Animations</h1>
+  <button type="button" (click)="fadeInOut()">Fade In/Out</button>
+  <!-- <h1 *ngIf="isShown" @fadeIn @fadeOut>This is a block with fade in and fadeout</h1> -->
+  <h1 [@fadeInOut]="isShown ? 'open':'close'" (@fadeInOut.start)="onAnimationStart($event)" (@fadeInOut.done)="onAnimationEnd($event)">This is a block with fade in and fadeout</h1>
+</div>
