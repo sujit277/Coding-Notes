@@ -17,12 +17,11 @@ ReactDOM.render(
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Sujit()
-{
+function Sujit() {
   return <h1>Hello Sujit</h1>
 }
 
 ReactDOM.render(
-<>
-<Sujit></Sujit>
-</>,document.getElementById("root"),()=> console.log("Server Started"));
+  <>
+    <Sujit></Sujit>
+  </>, document.getElementById("root"), () => console.log("Server Started"));

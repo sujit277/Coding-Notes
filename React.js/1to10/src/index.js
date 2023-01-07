@@ -16,11 +16,13 @@ document.getElementById("root").appendChild(h1);
 
 // Code for multiple elements sending in Reactjs
 ReactDOM.render(<React.Fragment>
-    <h1>Sujit Kumar Verma</h1>
-    <h1>DLT</h1>
-    <h1>Accenture</h1>
-    <h1>EPAM</h1>
-</React.Fragment>,document.getElementById("root"),()=>console.log("Server Started"));
+    <div style={{ textAlign: "center" }}>
+        <h1>Sujit Kumar Verma</h1>
+        <h1>DLT</h1>
+        <h1>Accenture</h1>
+        <h1>EPAM Systems</h1>
+    </div>
+</React.Fragment>, document.getElementById("root"), () => console.log("Server Started"));
 
 // For React 16. above version we can pass multiple elements as array
 /* ReactDOM.render([<h1>Sujit Kumar Verma</h1>,

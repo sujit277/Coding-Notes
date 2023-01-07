@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setNum(2);
+      setNum(2+1);
     }, 2000)
   }, []);
 
