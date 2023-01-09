@@ -2,24 +2,28 @@ import express from "express";
 import path from "path";
 import hbs from "hbs";
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import { dirname } from 'path'; 
 
-const app = express();
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-app.set("view engine","hbs");
-const staticPath = path.join(__dirname,"./partials");
-console.log(staticPath);
+const staticPath = path.join(__dirname, "./partials");
+
+const app = express();
+
+app.set("view engine", "hbs");
 hbs.registerPartials(staticPath);
 
-app.get("/",(req,res) => {
+//Rendering Index page
+app.get("/", (req, res) => {
     res.render("index.hbs");
 });
 
-app.get("*",(req,res) => {
+//Render Error page if none of the route is matched
+app.get("*", (req, res) => {
     res.render("404.hbs");
 })
 
-app.listen(9090,() => {
-    console.log("Server Started");
+app.listen(9000, () => {
+    console.log("Server Started at 9000");
 });

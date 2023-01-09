@@ -7,8 +7,10 @@ Event Emitter Class */
 import EventEmitter from "events";
 const event = new EventEmitter();
 
-event.on("checkpage",(sc,msg)=>{
-    console.log(`Status Code is ${sc} and the page is ${msg}`);
-});     
+//Listening for an Event
+event.on("checkpage", (statusCode, message) => {
+    console.log(`Status Code is ${statusCode} and the Page is ${message}`);
+});
 
-event.emit("checkpage",200,"Okk");
+//Emitting an Event
+event.emit("checkpage", 200, "Ok");

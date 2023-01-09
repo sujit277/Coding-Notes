@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 app.use(express.json());
+
 app.get("/getAllEmployeeData", function (req, res) {
     var employeeArr = [
         {

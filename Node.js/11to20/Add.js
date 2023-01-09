@@ -1,28 +1,22 @@
-/* First Way of Exporting Single Function
-const add = (a, b)=>{
-    return a+b;
+// First Way of Exporting Function
 
-};
-module.exports =add; */
-
-
-/* Second Way of Exporting Module Exporting
-const add = (a, b)=>{
+/* const add = (a, b) => {
     return a+b;
 };
-const sub = (a, b)=>{
+const sub = (a, b) => {
     return a-b;
 };
 module.exports.add = add;
 module.exports.sub = sub; */
 
 
-/* Third way of module exporting */
-const add = (a, b)=>{
-    return a+b;
+//Second way of Exporting Funtcion
+
+const add = (a, b) => {
+    return a + b;
 };
-const sub = (a, b)=>{
-    return a-b;
+const sub = (a, b) => {
+    return a - b;
 };
-export {add,sub};
+export { add, sub };
 

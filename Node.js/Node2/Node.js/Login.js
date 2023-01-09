@@ -1,13 +1,14 @@
 var express = require('express');
+
 var app = express();
+
 app.get("/", function (req, res) {
     var Uid = req.query.Uid;
     var Pwd = req.query.Pwd;
     strData = `Given Data is UID is ${Uid} and Password: ${Pwd}`;
-    console.log(strData);
-    strResult = "You are not a Valid User,Pls Check the Credentials..";
+    strResult = "<h1 style='text-align: center;'>You are not a Valid User, Please Check the Credentials </h1>";
     if (Uid == "Sujit" && Pwd == "Admin") {
-        strResult = "You are a Valid User,Welcome" + Uid;
+        strResult = "<h1 style='text-align: center;'>You are a Valid User, Welcome " + Uid+"</h1>";
     }
     res.send(strResult);
 })
