@@ -19,13 +19,14 @@ class Product {
             if (!err) {
                 products = JSON.parse(data);
             }
-            if (id) {
-                const existingProductIndex = products.findIndex(prod => prod.id == id);
+            if (this.id) {
+                const existingProductIndex = products.findIndex(prod => prod.id == this.id);
                 const updatedProducts = [...products];
                 updatedProducts[existingProductIndex] = this;
                 fs.writeFile(filepath, JSON.stringify(updatedProducts), () => {
                     console.log("Done");
                 });
+                return;
             }
             this.id = Math.floor(Math.random() * 101);
             products.push(this);

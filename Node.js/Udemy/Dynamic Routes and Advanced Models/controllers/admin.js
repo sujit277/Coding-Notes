@@ -24,20 +24,20 @@ getEditProduct = (req, res, next) => {
         if (!product) {
             return res.redirect('/');
         }
-        console.log(product);
         res.render('admin/edit-product.ejs', { product: product, editing: editMode });
     })
 
 }
 
 postEditProduct = (req, res, next) => {
-    const prodId = req.body.prodId;
+    const prodId = req.body.productId;
     const updatedname = req.body.name;
     const updatedImageUrl = req.body.imageUrl;
     const updatedPrice = req.body.price;
     const updatedDescription = req.body.description;
     const updatedProduct = new Product(prodId, updatedname, updatedImageUrl, updatedPrice, updatedDescription);
     updatedProduct.save();
+    res.redirect("/");
 }
 
 
