@@ -27,35 +27,35 @@ let employeeSequelize = sequelize.define('Employee', {
         type: Sequelize.INTEGER
     },
     Employee_Name: Sequelize.STRING,
-    Employee_Dept:Sequelize.STRING,
-    Employee_Designation:Sequelize.STRING
+    Employee_Dept: Sequelize.STRING,
+    Employee_Designation: Sequelize.STRING
 });
 
-employeeSequelize.sync().then(()=>{
-    console.log("Table Employee Defined Succesfully");
-}).catch((err)=>{
-    console.log("Error While Creating a table");
+employeeSequelize.sync().then(() => {
+    console.log("Sync with table is done");
+}).catch((err) => {
+    console.log("Error While Syncing with table");
 })
 
-/* employeeSequelize.bulkCreate([{
-    Employee_ID:567,
-    Employee_Name:"Sujit",
-    Employee_Dept:"Software Engineering",
-    Employee_Designation:"Junior Software Engineer "
+employeeSequelize.bulkCreate([{
+    Employee_ID: 567,
+    Employee_Name: "Sujit",
+    Employee_Dept: "Software Engineering",
+    Employee_Designation: "Junior Software Engineer "
 },
 {
-    Employee_ID:876,
-    Employee_Name:"Anjali",
-    Employee_Dept:"Software Engineering",
-    Employee_Designation:"Associate Software Engineer"
-}]).then((data)=>{
+    Employee_ID: 876,
+    Employee_Name: "Anjali",
+    Employee_Dept: "Software Engineering",
+    Employee_Designation: "Associate Software Engineer"
+}]).then((data) => {
     console.log("Records Inserted Successfully");
-}).catch((err)=>{
-    console.log("Unable to Insert Record: "+err);
-}) */
+}).catch((err) => {
+    console.log("Unable to Insert Record: " + err);
+})
 
-employeeSequelize.findAll({raw:true}).then((data)=>{
+employeeSequelize.findAll({ raw: true }).then((data) => {
     console.log(data);
-}).catch((err)=>{
+}).catch((err) => {
     console.log("Unable to Fetch Data From ProductSequelize");
 })

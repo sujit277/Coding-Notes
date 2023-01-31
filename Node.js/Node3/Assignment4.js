@@ -28,15 +28,15 @@ let movieSequelize = sequelize.define('Movie', {
     },
     Movie_Name: Sequelize.STRING,
     Movie_Type: Sequelize.STRING,
-},{
+}, {
     timestamps: false,
     freezeTableName: true
 });
 
 movieSequelize.sync().then(() => {
-    console.log("Table Movie Defined Succesfully");
+    console.log("Sync with table is done");
 }).catch((err) => {
-    console.log("Error While Creating a table");
+    console.log("Error While Syncing with table");
 })
 
 /* movieSequelize.bulkCreate([{
@@ -54,8 +54,8 @@ movieSequelize.sync().then(() => {
     console.log("Unable to Insert Record: " + err);
 }) */
 
-movieSequelize.findAll({raw:true}).then((data)=>{
+movieSequelize.findAll({ raw: true }).then((data) => {
     console.log(data);
-}).catch((err)=>{
+}).catch((err) => {
     console.log("Unable to Fetch Data From ProductSequelize");
 })

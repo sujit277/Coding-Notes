@@ -1,5 +1,5 @@
-const Sequelize = require("sequelize");
-const dbConfig = require('./db.config');
+const Sequelize = require('sequelize');
+const dbConfig = require("./db.config");
 
 // Sequelize object is created with DB Parameters
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
@@ -21,40 +21,109 @@ sequelize.authenticate().then(() => {
     console.log("Unable to Connect with the Database");
 })
 
-let studentSequelize = sequelize.define('Student', {
-    Student_ID: Sequelize.INTEGER,
-    Student_Name: Sequelize.STRING,
-    Student_Stream:Sequelize.STRING,
-    Student_Marks:Sequelize.INTEGER
-});
-
-studentSequelize.sync().then(()=>{
-    console.log("Table Student Defined Succesfully");
-}).catch((err)=>{
-    console.log("Error While Creating a table");
+let ProductSequelize = sequelize.define('productsequelize', {
+    Product_ID: {
+        primaryKey: true,
+        type: Sequelize.INTEGER
+    },
+    ProductName: Sequelize.STRING,
+    Descriptions: Sequelize.STRING,
+    Cost: Sequelize.INTEGER,
+}, {
+    timestamps: false,
+    freezeTableName: true
 })
 
-/* studentSequelize.bulkCreate([{
-    Student_ID:101,
-    Student_Name:"Sujit",
-    Student_Stream:"CSE",
-    Student_Marks:524
-},
-{
-    Student_ID:102,
-    Student_Name:"Anjali",
-    Student_Stream:"CSE",
-    Student_Marks:580
-}]).then((data)=>{
-    console.log("Records Inserted Successfully");
-}).catch((err)=>{
-    console.log("Unable to Insert Record: "+err);
+ProductSequelize.sync().then(() => {
+    console.log("Sync with table is done");
+}).catch((err) => {
+    console.log("Error While Syncing with table");
+})
+
+//Fetching Record by ID(Primary Key)
+/* ProductSequelize.findByPk(102).then((data) => {
+    console.log(data.dataValues);
+}).catch((err) => {
+    console.log("Unable to fetch Data from the Database" + err);
 }) */
 
-const Op = Sequelize.Op;
-studentSequelize.findAll({where:{Student_Marks:{[Op.gte]:550}},raw:true}).then((data)=>{
+//Fetching All Records
+/* ProductSequelize.findAll({raw:true}).then((data)=>{
+    console.log(data);
+}).catch((err)=>{
+    console.log("Unable to Fetch Data From ProductSequelize");
+}) */
+
+// Select * from productsequelize Where ProductName = "Fridge"
+/* ProductSequelize.findAll({where:{ProductName:'Fridge'},raw:true}).then((data)=>{
+    console.log(data);
+}).catch((err)=>{
+    console.log("Error While Fetching Records"+err)
+}) */
+
+// Select * from productsequelize order by ProductName
+ProductSequelize.findAll({ order: [['ProductName', 'ASC']], raw: true }).then((data) => {
+    console.log(data);
+}).catch((err) => {
+    console.log("Unable to Fetch Records " + err);
+})
+
+//Select ProductName, Cost from productsequelize where ProductName = 'Fridge'
+/* ProductSequelize.findAll({attributes:['Descriptions','Cost'],where:{ProductName:'Fridge'},raw:true}).then((data)=>{
+    console.log(data);
+}).catch((err)=>{
+    console.log("Unable to Fetch Records "+err);    
+}) */
+
+//Executing Native SQL Query
+/* sequelize.query("Select * from `productsequelize` where ProductName ='Fridge'",{type:Sequelize.QueryTypes.SELECT}).then(function(data){
+    console.log(data);
+}).catch((err)=>{
+    console.log("Unable to Execute Native SQL Query: "+err);
+}) */
+
+//Select * From productsequelize where ProductName ='Fridge OR ProductName='Mobile'
+/* const Op = Sequelize.Op;
+ProductSequelize.findAll({where:{[Op.or]:[{ProductName:'Fridge'},{ProductName:'Mobile'}]
+},raw:true}).then((data)=>{
     console.log(data)
 }).catch((err)=>{
     console.log("Unable to Fetch Data, "+err);
-})
+}) */
 
+//Insert Into Sequelize
+/* ProductSequelize.create({
+    Product_ID: 106,
+    ProductName: "Fan",
+    Descriptions: "Usha Fan",
+    Cost: 2500
+}).then((data) => {
+    console.log("Record Inserted Successfully");
+}).catch((err) => {
+    console.log("Unable to Insert Record: " + err);
+}) */
+
+//Another way of Inserting a Record is using Build() and Save()
+/* let productObj = ProductSequelize.build({Product_ID:108,ProductName:"Water Purifier",Descriptions:"Aqua Guard Water Purifier",Cost:12000});
+productObj.save();
+console.log("Data Inserted SuccessFully"); */
+
+//Update in Sequelize
+/* ProductSequelize.update(
+    { Descriptions: 'Samsung Mobile' },
+    { where: { Descriptions: 'Anderiod Mobile' } }
+).then((data) => {
+    console.log("Updated: " + data);
+}).catch((err) => {
+    console.log("Unable to Update Record" + err);
+}) */
+
+
+//Delete in Sequelize
+ProductSequelize.destroy({
+    where: { Descriptions: 'Samsung Washing Machine' }
+}).then((data) => {
+    console.log(data + " Records Deleted Succesfully");
+}).catch((err) => {
+    console.log("Could Not Delete a Record Because of Error " + err);
+})

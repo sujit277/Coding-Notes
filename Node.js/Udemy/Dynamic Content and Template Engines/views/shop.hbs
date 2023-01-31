@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Dynamic Content Rendering using Handlebars</h1>
+        {{#if hasproducts }}
+        {{#each products}}
+        <h1>{{this}}</h1>
+        {{/each}}
+        {{else}}
+        <h1>No Products Found</h1>
+        {{/if}}
+    </div>
+</body>
+
+</html>

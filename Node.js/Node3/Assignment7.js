@@ -27,14 +27,14 @@ let employeeSequelize = sequelize.define('Employee', {
         type: Sequelize.INTEGER
     },
     Employee_Name: Sequelize.STRING,
-    Employee_Dept:Sequelize.STRING,
-    Employee_Designation:Sequelize.STRING
+    Employee_Dept: Sequelize.STRING,
+    Employee_Designation: Sequelize.STRING
 });
 
-employeeSequelize.sync().then(()=>{
-    console.log("Table Employee Defined Succesfully");
-}).catch((err)=>{
-    console.log("Error While Creating a table");
+employeeSequelize.sync().then(() => {
+    console.log("Sync with table is done");
+}).catch((err) => {
+    console.log("Error While Syncing with table");
 })
 
 /* employeeSequelize.bulkCreate([{
@@ -54,10 +54,10 @@ employeeSequelize.sync().then(()=>{
     console.log("Unable to Insert Record: "+err);
 }) */
 
-employeeSequelize.findAll({where:{Employee_Name:'Anjali'},raw:true}).then((data)=>{
+employeeSequelize.findAll({ where: { Employee_Name: 'Anjali' }, raw: true }).then((data) => {
     console.log(data);
-}).catch((err)=>{
-    console.log("Error While Fetching Records"+err)
+}).catch((err) => {
+    console.log("Error While Fetching Records" + err)
 })
 
 

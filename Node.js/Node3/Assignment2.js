@@ -24,12 +24,12 @@ sequelize.authenticate().then(() => {
 let studentSequelize = sequelize.define('Student', {
     Student_ID: Sequelize.INTEGER,
     Student_Name: Sequelize.STRING,
-    Student_Stream:Sequelize.STRING,
-    Student_Marks:Sequelize.INTEGER
+    Student_Stream: Sequelize.STRING,
+    Student_Marks: Sequelize.INTEGER
 });
 
-studentSequelize.sync().then(()=>{
-    console.log("Table Student Defined Succesfully");
-}).catch((err)=>{
-    console.log("Error While Creating a table");
+studentSequelize.sync().then(() => {
+    console.log("Sync with table is done");
+}).catch((err) => {
+    console.log("Error While Syncing with table");
 })

@@ -32,26 +32,26 @@ let demoSequelize = sequelize.define('Demo', {
     freezeTableName: true
 })
 
-demoSequelize.sync().then(()=>{
-    console.log("Table Demo Defined Succesfully");
-}).catch((err)=>{
-    console.log("Error While Creating a table");
+demoSequelize.sync().then(() => {
+    console.log("Sync with table is done");
+}).catch((err) => {
+    console.log("Error While Syncing with table");
 })
 
-demoSequelize.create({
+/* demoSequelize.create({
     Product_ID:101,
     ProductName:"Washing Machine"
 }).then((data)=>{
     console.log("Record Inserted Successfully");
 }).catch((err)=>{
     console.log("Unable to Insert Record: "+err);
-})
-
-/* demoSequelize.findAll({raw:true}).then((data)=>{
-    console.log(data);
-}).catch((err)=>{
-    console.log("Unable to Fetch Data From ProductSequelize");
 }) */
+
+demoSequelize.findAll({ raw: true }).then((data) => {
+    console.log(data);
+}).catch((err) => {
+    console.log("Unable to Fetch Data From ProductSequelize");
+})
 
 
 

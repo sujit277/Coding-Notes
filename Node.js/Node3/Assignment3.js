@@ -24,29 +24,29 @@ sequelize.authenticate().then(() => {
 let studentSequelize = sequelize.define('Student', {
     Student_ID: Sequelize.INTEGER,
     Student_Name: Sequelize.STRING,
-    Student_Stream:Sequelize.STRING,
-    Student_Marks:Sequelize.INTEGER
+    Student_Stream: Sequelize.STRING,
+    Student_Marks: Sequelize.INTEGER
 });
 
-studentSequelize.sync().then(()=>{
-    console.log("Table Student Defined Succesfully");
-}).catch((err)=>{
+studentSequelize.sync().then(() => {
+    console.log("Sync with table is done");
+}).catch((err) => {
     console.log("Error While Creating a table");
 })
 
 studentSequelize.bulkCreate([{
-    Student_ID:101,
-    Student_Name:"Sujit",
-    Student_Stream:"CSE",
-    Student_Marks:524
+    Student_ID: 101,
+    Student_Name: "Sujit",
+    Student_Stream: "CSE",
+    Student_Marks: 524
 },
 {
-    Student_ID:102,
-    Student_Name:"Anjali",
-    Student_Stream:"CSE",
-    Student_Marks:580
-}]).then((data)=>{
+    Student_ID: 102,
+    Student_Name: "Anjali",
+    Student_Stream: "CSE",
+    Student_Marks: 580
+}]).then((data) => {
     console.log("Records Inserted Successfully");
-}).catch((err)=>{
-    console.log("Unable to Insert Record: "+err);
+}).catch((err) => {
+    console.log("Unable to Insert Record: " + err);
 })
