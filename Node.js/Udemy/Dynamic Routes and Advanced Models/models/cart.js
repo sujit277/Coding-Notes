@@ -10,6 +10,9 @@ class Cart {
             var cart = { products: [], totalPrice: 0 };
             if (!err) {
                 cart = JSON.parse(data);
+                if (!cart) {
+                    return;
+                }
             }
 
             //Analyze the Cart and Find Existing Product
@@ -49,7 +52,7 @@ class Cart {
             if (product) {
                 const productQty = product.qty;
                 updatedCart.products = updatedCart.products.filter((prod) => {
-                    prod.id != id
+                    return prod.id != id
                 })
                 updatedCart.totalPrice = updatedCart.totalPrice - productPrice * productQty;
                 fs.writeFile(filepath, JSON.stringify(updatedCart), err => {
