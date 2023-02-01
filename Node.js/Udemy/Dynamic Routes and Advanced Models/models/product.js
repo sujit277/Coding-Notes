@@ -63,7 +63,7 @@ class Product {
         const filepath = path.join(__dirname, '../', 'data', 'database.json');
         fs.readFile(filepath, (err, data) => {
             const parsedData = JSON.parse(data);
-            const product = parsedData.filter((prod) => { prod.id == id })
+            const product = parsedData.filter((prod) => prod.id == id)
             const updatedProducts = parsedData.filter(element => element.id != id);
             fs.writeFile(filepath, JSON.stringify(updatedProducts), err => {
                 if (!err) {

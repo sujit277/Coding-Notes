@@ -40,22 +40,38 @@ class Cart {
         const filepath = path.join(__dirname, '../', 'data', 'cart.json');
         fs.readFile(filepath, (err, data) => {
             if (err) {
+                console.log(err);
                 return;
             }
             const parsedCartData = JSON.parse(data);
             const updatedCart = { ...parsedCartData };
             const product = updatedCart.products.find(prod => prod.id == id);
-            const productQty = product.qty;
-            updatedCart.products = updatedCart.products.filter((prod) => {
-                prod.id != id
-            })
-            updatedCart.totalPrice = updatedCart.totalPrice - productPrice * productQty;
-            fs.writeFile(filepath, JSON.stringify(updatedProducts), err => {
-                if (!err) {
+            if (product) {
+                const productQty = product.qty;
+                updatedCart.products = updatedCart.products.filter((prod) => {
+                    prod.id != id
+                })
+                updatedCart.totalPrice = updatedCart.totalPrice - productPrice * productQty;
+                fs.writeFile(filepath, JSON.stringify(updatedCart), err => {
+                    console.log(err);
+                })
+            }
+            else {
+                console.log("Product Deleted");
+            }
 
-                }
-            })
-            callback(product);
+        })
+    }
+
+    static getProducts(callback) {
+        const filepath = path.join(__dirname, '../', 'data', 'cart.json');
+        fs.readFile(filepath, (err, data) => {
+            const cart = JSON.parse(data);
+            if (err) {
+                callback(null);
+            } else {
+                callback(cart);
+            }
         })
     }
 }

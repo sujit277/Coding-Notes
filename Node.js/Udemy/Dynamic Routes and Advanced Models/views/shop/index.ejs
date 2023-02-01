@@ -30,8 +30,14 @@
                                 <p class="card-text">
                                     <%= item.description %>
                                 </p>
-                                <a class="btn btn-primary" href="/admin/edit-product/<%= item.id %>?edit=true">Edit</a>
-                                <a class="btn btn-danger" href="#">Delete</a>
+                                <div style="display: flex;">
+                                    <a class="btn btn-primary mx-2"
+                                        href="/admin/edit-product/<%= item.id %>?edit=true">Edit</a>
+                                    <form action="/admin/delete-product" method="POST">
+                                        <input type="hidden" value="<%=item.id%>" name="productId" />
+                                        <button class="btn btn-danger" type="submit">Delete</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <% } %>
