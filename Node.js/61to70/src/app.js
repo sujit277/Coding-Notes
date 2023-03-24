@@ -45,7 +45,7 @@ app.get("/", (req, res) => {
 /* app.delete("/student/:id", async (req, res) => {
     try {
         if (!req.params.id) {
-            return +res.status(400).send();
+            return res.status(400).send();
         }
         const deletestudent = await studentrecord.findByIdAndDelete(req.params.id);
         res.send(deletestudent);
