@@ -1,5 +1,5 @@
-const e = require('express');
-var express = require('express');
+const e = require("express");
+var express = require("express");
 
 var app = express();
 app.use(express.json());
@@ -9,31 +9,36 @@ var employeeArr = [
     Id: 10100918,
     Name: "Anjali Kumari",
     Dept: "Software Engineering",
-    Designation: "Associate Software Engineer"
+    Designation: "Associate Software Engineer",
   },
   {
     Id: 904065,
     Name: "Sujit Verma",
     Dept: "Software Engineering",
-    Designation: "Junior Software Engineer"
+    Designation: "Junior Software Engineer",
   },
   {
     Id: 879885,
     Name: "Chandani Verma",
     Dept: "Software Engineering",
-    Designation: "Senior Test Engineer"
-  }
+    Designation: "Senior Test Engineer",
+  },
 ];
 
-//Getting all Records 
+//Getting all Records
 app.get("/getAllEmployees", function (req, res) {
   res.send(employeeArr);
-})
+});
 
 //Inserting Record into Array
-app.post('/insertEmployeeData', (req, res) => {
+app.post("/insertEmployeeData", (req, res) => {
   let data = req.body;
-  if (data.Id != undefined && data.Name != undefined && data.Dept != undefined && data.Designation != undefined) {
+  if (
+    data.Id != undefined &&
+    data.Name != undefined &&
+    data.Dept != undefined &&
+    data.Designation != undefined
+  ) {
     employeeArr.push(data);
     res.send("Record inserted successfully");
   } else {
@@ -54,11 +59,9 @@ app.put("/updateEmployeeData/:Id", (req, res) => {
       flag = true;
     }
   }
-  if (flag)
-    res.send("Data Updated Successfully");
-  else
-    res.send("Data Updated UnSuccessfully");
-})
+  if (flag) res.send("Data Updated Successfully");
+  else res.send("Data Updated UnSuccessfully");
+});
 
 //Deleteing Record for Particular ID
 app.delete("/deleteRecord/:Id", (req, res) => {
@@ -76,7 +79,6 @@ app.delete("/deleteRecord/:Id", (req, res) => {
   } else {
     res.send("No Record Found");
   }
-
 });
 
 //Getting Records Based on ID
@@ -94,7 +96,6 @@ app.get("/getEmployeeById/:Id", (req, res) => {
   } else {
     res.send("No Records Found");
   }
-
 });
 
 //Getting Record Based on Name
@@ -103,12 +104,12 @@ app.get("/getEmployeeByName", (req, res) => {
   let empobj = [];
   for (let i = 0; i < employeeArr.length; i++) {
     if (employeeArr[i].Name.includes(Name)) {
-      empobj.push(employeeArr[i])
+      empobj.push(employeeArr[i]);
     }
   }
   res.json(empobj);
-})
+});
 
 app.listen(8000, () => {
   console.log("Server is running at Port 8000");
-})
+});

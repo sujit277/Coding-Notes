@@ -10,12 +10,11 @@
    you should include an http server with the correct content type
 */
 
-
 import http from "http";
 const server = http.createServer((req, res) => {
-    res.end("Hello Brother I am Damon");
+  res.end("Hello Brother I am Damon");
 });
 
 server.listen(8000, () => {
-    console.log("Listening on the port number 8000");
+  console.log("Listening on the port number 8000");
 });

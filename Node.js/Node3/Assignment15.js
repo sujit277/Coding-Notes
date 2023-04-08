@@ -1,38 +1,43 @@
 const Sequelize = require("sequelize");
-const dbConfig = require('./db.config');
+const dbConfig = require("./db.config");
 
 // Sequelize object is created with DB Parameters
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
-    host: dbConfig.HOST,
-    dialect: dbConfig.dialect,
-    pool: {
-        max: dbConfig.pool.max,
-        min: dbConfig.pool.min,
-        acquire: dbConfig.pool.acquire,
-        idle: dbConfig.pool.idle
-
-    }
-})
-
-//Connects to the Database and Checks whether Everything is fine or not
-sequelize.authenticate().then(() => {
-    console.log("Successfully Connected with the Database");
-}).catch((err) => {
-    console.log("Unable to Connect with the Database");
-})
-
-let testDemoSequelize = sequelize.define('Testdemo', {
-    Student_ID: Sequelize.INTEGER,
-    Student_Name: Sequelize.STRING,
-    Student_Stream: Sequelize.STRING,
-    Student_Marks: Sequelize.INTEGER
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
+  pool: {
+    max: dbConfig.pool.max,
+    min: dbConfig.pool.min,
+    acquire: dbConfig.pool.acquire,
+    idle: dbConfig.pool.idle,
+  },
 });
 
-testDemoSequelize.sync().then(() => {
+//Connects to the Database and Checks whether Everything is fine or not
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log("Successfully Connected with the Database");
+  })
+  .catch((err) => {
+    console.log("Unable to Connect with the Database");
+  });
+
+let testDemoSequelize = sequelize.define("Testdemo", {
+  Student_ID: Sequelize.INTEGER,
+  Student_Name: Sequelize.STRING,
+  Student_Stream: Sequelize.STRING,
+  Student_Marks: Sequelize.INTEGER,
+});
+
+testDemoSequelize
+  .sync()
+  .then(() => {
     console.log("Table Student Defined Succesfully");
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log("Error While Creating a table");
-})
+  });
 
 /* studentSequelize.bulkCreate([{
     Student_ID:101,
@@ -51,12 +56,11 @@ testDemoSequelize.sync().then(() => {
     console.log("Unable to Insert Record: "+err);
 }) */
 
-
-testDemoSequelize.drop().then((data) => {
+testDemoSequelize
+  .drop()
+  .then((data) => {
     console.log(data);
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log(err);
-})
-
-
-
+  });

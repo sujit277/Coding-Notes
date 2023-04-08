@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Welcome to Student Managment System");
+  res.send("Welcome to Student Managment System");
 });
 
 //Creating a New Student record
@@ -20,7 +20,6 @@ app.get("/", (req, res) => {
         console.log(err);
     }
 }); */
-
 
 //Getting Records from the Database
 
@@ -39,7 +38,6 @@ app.get("/", (req, res) => {
     }
 }); */
 
-
 //Deleting the Records from the Database
 
 /* app.delete("/student/:id", async (req, res) => {
@@ -57,16 +55,15 @@ app.get("/", (req, res) => {
 //Updating the Records
 
 app.patch("/student/:id", async (req, res) => {
-    try {
-        const id = req.params.id;
-        const updatestudent = await studentrecord.findByIdAndUpdate(id, req.body);
-        res.send(updatestudent)
-    } catch (err) {
-        res.status(500).send(err)
-    }
+  try {
+    const id = req.params.id;
+    const updatestudent = await studentrecord.findByIdAndUpdate(id, req.body);
+    res.send(updatestudent);
+  } catch (err) {
+    res.status(500).send(err);
+  }
 });
 
-
 app.listen(8000, () => {
-    console.log("The Server is Running On Port Number 8000")
-})
+  console.log("The Server is Running On Port Number 8000");
+});

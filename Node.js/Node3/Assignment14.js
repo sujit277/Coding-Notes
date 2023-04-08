@@ -1,44 +1,52 @@
-const Sequelize = require('sequelize');
+const Sequelize = require("sequelize");
 const dbConfig = require("./db.config");
 
 // Sequelize object is created with DB Parameters
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
-    host: dbConfig.HOST,
-    dialect: dbConfig.dialect,
-    pool: {
-        max: dbConfig.pool.max,
-        min: dbConfig.pool.min,
-        acquire: dbConfig.pool.acquire,
-        idle: dbConfig.pool.idle
-
-    }
-})
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
+  pool: {
+    max: dbConfig.pool.max,
+    min: dbConfig.pool.min,
+    acquire: dbConfig.pool.acquire,
+    idle: dbConfig.pool.idle,
+  },
+});
 
 //Connects to the Database and Checks whether Everything is fine or not
-sequelize.authenticate().then(() => {
+sequelize
+  .authenticate()
+  .then(() => {
     console.log("Successfully Connected with the Database");
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log("Unable to Connect with the Database");
-})
+  });
 
-let ProductSequelize = sequelize.define('productsequelize', {
+let ProductSequelize = sequelize.define(
+  "productsequelize",
+  {
     Product_ID: {
-        primaryKey: true,
-        type: Sequelize.INTEGER
+      primaryKey: true,
+      type: Sequelize.INTEGER,
     },
     ProductName: Sequelize.STRING,
     Descriptions: Sequelize.STRING,
     Cost: Sequelize.INTEGER,
-}, {
+  },
+  {
     timestamps: false,
-    freezeTableName: true
-})
+    freezeTableName: true,
+  }
+);
 
-ProductSequelize.sync().then(() => {
+ProductSequelize.sync()
+  .then(() => {
     console.log("Sync with table is done");
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log("Error While Syncing with table");
-})
+  });
 
 //Fetching Record by ID(Primary Key)
 /* ProductSequelize.findByPk(102).then((data) => {
@@ -62,11 +70,13 @@ ProductSequelize.sync().then(() => {
 }) */
 
 // Select * from productsequelize order by ProductName
-ProductSequelize.findAll({ order: [['ProductName', 'ASC']], raw: true }).then((data) => {
+ProductSequelize.findAll({ order: [["ProductName", "ASC"]], raw: true })
+  .then((data) => {
     console.log(data);
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log("Unable to Fetch Records " + err);
-})
+  });
 
 //Select ProductName, Cost from productsequelize where ProductName = 'Fridge'
 /* ProductSequelize.findAll({attributes:['Descriptions','Cost'],where:{ProductName:'Fridge'},raw:true}).then((data)=>{
@@ -118,12 +128,13 @@ console.log("Data Inserted SuccessFully"); */
     console.log("Unable to Update Record" + err);
 }) */
 
-
 //Delete in Sequelize
 ProductSequelize.destroy({
-    where: { Descriptions: 'Samsung Washing Machine' }
-}).then((data) => {
-    console.log(data + " Records Deleted Succesfully");
-}).catch((err) => {
-    console.log("Could Not Delete a Record Because of Error " + err);
+  where: { Descriptions: "Samsung Washing Machine" },
 })
+  .then((data) => {
+    console.log(data + " Records Deleted Succesfully");
+  })
+  .catch((err) => {
+    console.log("Could Not Delete a Record Because of Error " + err);
+  });

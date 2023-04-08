@@ -1,6 +1,6 @@
-var dns = require('dns');
+var dns = require("dns");
 
-dns.lookup('www.google.com',(err,address,family)=>{
-    console.log("Address: "+address);
-    console.log("Family: "+family);
-})
+dns.lookup("www.google.com", (err, address, family) => {
+  console.log("Address: " + address);
+  console.log("Family: " + family);
+});

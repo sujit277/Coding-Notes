@@ -1,42 +1,51 @@
 const Sequelize = require("sequelize");
-const dbConfig = require('./db.config');
+const dbConfig = require("./db.config");
 
 // Sequelize object is created with DB Parameters
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
-    host: dbConfig.HOST,
-    dialect: dbConfig.dialect,
-    pool: {
-        max: dbConfig.pool.max,
-        min: dbConfig.pool.min,
-        acquire: dbConfig.pool.acquire,
-        idle: dbConfig.pool.idle
-
-    }
-})
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
+  pool: {
+    max: dbConfig.pool.max,
+    min: dbConfig.pool.min,
+    acquire: dbConfig.pool.acquire,
+    idle: dbConfig.pool.idle,
+  },
+});
 
 //Connects to the Database and Checks whether Everything is fine or not
-sequelize.authenticate().then(() => {
+sequelize
+  .authenticate()
+  .then(() => {
     console.log("Successfully Connected with the Database");
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log("Unable to Connect with the Database");
-})
+  });
 
-let demoSequelize = sequelize.define('Demo', {
+let demoSequelize = sequelize.define(
+  "Demo",
+  {
     Product_ID: {
-        primaryKey: true,
-        type: Sequelize.INTEGER
+      primaryKey: true,
+      type: Sequelize.INTEGER,
     },
     ProductName: Sequelize.STRING,
-}, {
+  },
+  {
     timestamps: false,
-    freezeTableName: true
-})
+    freezeTableName: true,
+  }
+);
 
-demoSequelize.sync().then(() => {
+demoSequelize
+  .sync()
+  .then(() => {
     console.log("Sync with table is done");
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log("Error While Syncing with table");
-})
+  });
 
 /* demoSequelize.create({
     Product_ID:101,
@@ -47,11 +56,11 @@ demoSequelize.sync().then(() => {
     console.log("Unable to Insert Record: "+err);
 }) */
 
-demoSequelize.findAll({ raw: true }).then((data) => {
+demoSequelize
+  .findAll({ raw: true })
+  .then((data) => {
     console.log(data);
-}).catch((err) => {
+  })
+  .catch((err) => {
     console.log("Unable to Fetch Data From ProductSequelize");
-})
-
-
-
+  });

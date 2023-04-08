@@ -1,31 +1,31 @@
 import mongoose from "mongoose";
 
 /* Creating conncetion with Mongodb */
-mongoose.connect("mongodb://localhost:27017/student", { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log("Connection Sucessful"))
-    .catch((err) => console.log(err));
-
+mongoose
+  .connect("mongodb://localhost:27017/student", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connection Sucessful"))
+  .catch((err) => console.log(err));
 
 /* Schema
 A Mongoose Schema defines the Structure of the document
 default values, Validator Etc */
 
 const playlistSchema = new mongoose.Schema({
-    Name: String,
-    Class: Number,
-    Rollno: Number,
-    Subject: String,
-})
-
+  Name: String,
+  Class: Number,
+  Rollno: Number,
+  Subject: String,
+});
 
 /* A Mongoose Model is a Warapper on the Mongoose Schema
 A mongoose Schema Defines the structure of the document
 Default values Validator */
 
-
 /* Mongoose Model Provides an interface to the database for Querying 
 ,Creating, Updating ,Delete */
-
 
 //Model creation
 const Playlist = new mongoose.model("Playlist", playlistSchema);
@@ -62,7 +62,6 @@ const Playlist = new mongoose.model("Playlist", playlistSchema);
 }
 createDocument(); */
 
-
 //Reading From the database
 
 /* const getDocument = async () => {
@@ -76,7 +75,6 @@ createDocument(); */
     }
 }
 getDocument(); */
-
 
 //Appling the Relational Operator
 
@@ -92,8 +90,6 @@ getDocument(); */
 }
 getDocument(); */
 
-
-
 //Appling the LogicalQuery Operator
 
 /* const getDocument = async () => {
@@ -107,7 +103,6 @@ getDocument(); */
     }
 }
 getDocument(); */
-
 
 //Counting and Sorting the Records
 
@@ -125,7 +120,6 @@ getDocument(); */
 }
 getDocument(); */
 
-
 //Update the Record
 
 /* const updatetDocument = async (id) => {
@@ -138,16 +132,14 @@ getDocument(); */
 };
 updatetDocument("63baab47a0eafd5e90bd7ea2"); */
 
-
-//Delete the Record 
+//Delete the Record
 
 const updatetDocument = async (id) => {
-    try {
-        const result = await Playlist.findByIdAndDelete({ _id: id });
-        console.log(result);
-    } catch (err) {
-        console.log(err);
-    }
+  try {
+    const result = await Playlist.findByIdAndDelete({ _id: id });
+    console.log(result);
+  } catch (err) {
+    console.log(err);
+  }
 };
 updatetDocument("603ce7a7dcdfeb02e8b24382");
-

@@ -8,8 +8,6 @@ programming you’re able to deal with multiple requests simultaneously,
 thus completing more tasks in a much shorter period of time.   
 */
 
-
-
 //Synchronous Operations
 
 const fs = require("fs");
@@ -17,7 +15,7 @@ const fs = require("fs");
 //Creating a file and Writing into the file
 /* fs.writeFileSync("read.txt","Welcome to Bangalore "); */
 
- //Appending to a a file
+//Appending to a a file
 /* fs.appendFileSync("read.txt","Can You Come On Coffee With Me"); */
 
 //Reading File in Buffer format
@@ -37,9 +35,7 @@ console.log(words) */
 //Deleting the file
 /* fs.unlinkSync("read.txt"); */
 
-
-
-//Asynchronous Operations 
+//Asynchronous Operations
 
 /* const fs = require("fs"); */
 
@@ -49,7 +45,7 @@ console.log(words) */
     console.log(err); 
 }); */
 
-//Appending into the File 
+//Appending into the File
 /* fs.appendFile("lit.txt","I Love To Watch Movie Today",(err)=>{
     console.log("Data Appended");
     console.log(err);
@@ -57,12 +53,10 @@ console.log(words) */
 
 //Reading from the file
 fs.readFile("lit.txt", "UTF-8", (err, data) => {
-    console.log("Data Read SuccessFully");
-    console.log(data);
-    console.log(err);
-})
-
-
+  console.log("Data Read SuccessFully");
+  console.log(data);
+  console.log(err);
+});
 
 // OS information builtin Library
 
