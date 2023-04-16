@@ -1,12 +1,12 @@
 import React from "react";
 import Destroy from "./Destroy";
 
+//LifeCycle Hooks of React Class Component
 class LifeCycle extends React.Component {
-
     constructor() {
         super();
         this.state = { count: 0, visible: true };
-        console.log("Constructor is Called");;
+        console.log("Constructor is Called");
     }
 
     increment() {

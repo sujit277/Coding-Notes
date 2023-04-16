@@ -6,7 +6,7 @@ const App = () => {
     <>
       <AppB />
     </>
-  )
-}
+  );
+};
 
 export default App;

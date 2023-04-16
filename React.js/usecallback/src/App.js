@@ -1,5 +1,5 @@
-import './App.css';
-import ComA from './Components/ComA/ComA';
+import "./App.css";
+import ComA from "./Components/ComA/ComA";
 
 function App() {
   return (
@@ -8,5 +8,5 @@ function App() {
     </>
   );
 }
-
 export default App;
+

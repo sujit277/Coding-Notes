@@ -1,17 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import Appfirst from "./Appfirst";
+//import Appsecond from './Appsecond';
+//import Appthird from './Appthird';
+//import Appfourth from './Appfourth';
+//import Appfive from './Appfive';
+//import Appsix from './Appsix';
+//import Appseven from "./Appseven";
+//import Appeight from './Appeight';
+import Router from "./Router"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDOM.render(<App />,document.getElementById('root'));
+/* ReactDOM.render(<Appfirst/>,document.getElementById('root')); */
+/* ReactDOM.render(<Appsecond/>,document.getElementById('root')); */
+/* ReactDOM.render(<Appthird/>,document.getElementById('root')); */
+/* ReactDOM.render(<Appfourth/>,document.getElementById('root')); */
+/* ReactDOM.render(<Appfive/>,document.getElementById('root')); */
+/* ReactDOM.render(<Appsix/>,document.getElementById('root')); */
+/* ReactDOM.render(<Appseven/>,document.getElementById('root')); */
+/* ReactDOM.render(<Router/>,document.getElementById('root')); */
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

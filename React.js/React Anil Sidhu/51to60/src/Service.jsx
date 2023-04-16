@@ -1,23 +1,31 @@
 import React from "react";
-import { useLocation, useParams, useSearchParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 const Service = () => {
+  // For Reading Dynamic Url data
+  const params = useParams("name");
 
-    const params = useParams('name');
-    const location = useLocation();
-    console.log(location);
-    /* const [searchParams,setSearchParams] = useSearchParams();
-    const name = searchParams.get('name'); */
+  // For Reading and Writing to the Query Params in the Url
+  const [searchParams, setSearchParams] = useSearchParams();
+  const name = searchParams.get("name");
 
-    return (
-        <>
-            <div style={{ textAlign: "center" }}>
-                <h1>Service Component</h1>
-                {params.name ? (<h1>{params.name}</h1>) : null}
-               {/* {name?(<h1>{name}</h1>):null} */}
-            </div>
-        </>
-    );
-}
+  return (
+    <>
+      <div style={{ textAlign: "center" }}>
+        <h1>Service Component</h1>
+        {params.name ? <h1>{params.name}</h1> : null}
+        {name ? <h1>{name}</h1> : null}
+        <button
+          type="button"
+          onClick={() => {
+            setSearchParams({ name: "Elon Musk" });
+          }}
+        >
+          ChangeueryParms
+        </button>
+      </div>
+    </>
+  );
+};
 
 export default Service;

@@ -6,10 +6,10 @@ import './index.css';
 //import Ref from './Ref';
 //import Useref from './Useref';
 //import ForwardRef from './ForwardRef';
-//import Controlled from './Controlled';
+import Controlled from './Controlled';
 //import UnControlled from './UnControlled';
 //import Menu from './Menu';
-import App from "./App";
+//import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,11 +18,11 @@ root.render(
     {/* <Ref/> */}
     {/* <Useref/> */}
     {/* <ForwardRef/> */}
-    {/* <Controlled /> */}
+    <Controlled />
     {/* <UnControlled/> */}
     {/* <HOCComponent/> */}
     {/* <Menu/> */}
-    <App/>
+    {/* <App/> */}
   </React.StrictMode>
 );
 

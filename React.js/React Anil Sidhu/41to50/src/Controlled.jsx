@@ -1,22 +1,28 @@
 import React, { useState } from "react";
 
 const Controlled = () => {
+  const [name, setName] = useState("Sujit Kumar Verma");
 
-    const [count, setCount] = useState(0);
+  function setNameOnChange(name) {
+    setName(name);
+  }
 
-    function increment() {
-        setCount(count + 1);
-    }
-
-    return (
-        <>
-            <div style={{ textAlign: "center" }}>
-                <h1>Controlled Component</h1>
-                <h1>{count}</h1>
-                <button type="buton" onClick={increment}>Increment</button>
-            </div>
-        </>
-    );
-}
+  return (
+    <>
+      <div style={{ textAlign: "center" }}>
+        <h1>Controlled Component</h1>
+        <h1>{name}</h1>
+        <input
+          type="text"
+          name="name"
+          value={name}
+          onChange={(event) => {
+            setNameOnChange(event.target.value);
+          }}
+        />
+      </div>
+    </>
+  );
+};
 
 export default Controlled;

@@ -5,4 +5,4 @@ const ComB = () => {
   return <ComC />;
 };
 
-export default ComB; 
+export default ComB;

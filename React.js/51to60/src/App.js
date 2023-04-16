@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from "react";
 
 const App = () => {
-
-  const [num, setNum] = useState(0);
-  useEffect(() => { alert("I am Clicked"); }, [])
+  const [num, setNum] = useState(1);
+  useEffect(() => {
+    alert("I am Clicked");
+  }, []);
 
   return (
     <div style={{ textAlign: "center" }}>
       <h1>You Choose {num}</h1>
-      <select value={num} onChange={(event) => { setNum(event.target.value) }}>
+      <select
+        value={num}
+        onChange={(event) => {
+          setNum(event.target.value);
+        }}
+      >
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -17,7 +23,6 @@ const App = () => {
       </select>
     </div>
   );
-
-}
+};
 
 export default App;
