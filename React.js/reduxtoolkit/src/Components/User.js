@@ -1,5 +1,5 @@
 import React, { useEffect} from "react";
-import { getUsers } from "../Redux/Features/userFeature";
+import { getUsers } from "../Store/Slices/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const User = () => {
@@ -7,8 +7,8 @@ const User = () => {
     let dispatch = useDispatch();
 
     //get data from Redux Store
-    let userState = useSelector((store) => {
-        return store["users"];
+    let userState = useSelector((state) => {
+        return state["users"];
     })
 
     useEffect(async () => {
