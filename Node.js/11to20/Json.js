@@ -12,7 +12,7 @@ console.log(jsondata);
 
 //JSON.parse is used to convert the json object into javascript object
 /* const javascriptdata = JSON.parse(jsondata);
-console.log(javascriptdata) */ //Wriring the Json data into the given file
+console.log(javascriptdata) */ //Wrirting the Json data into the given file
 /* fs.writeFile("jsonsample.json",jsondata,(err)=>{
    console.log("done");
 }); */
