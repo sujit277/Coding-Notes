@@ -30,7 +30,7 @@ const ComA = () => {
           </button>
         </div>
         <ComB />
-        <ComC/>
+        <ComC />
       </div>
     </>
   );

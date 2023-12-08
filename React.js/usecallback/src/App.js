@@ -1,12 +1,12 @@
 import "./App.css";
 import ComA from "./Components/ComA/ComA";
 
-function App() {
+const App = () => {
   return (
     <>
       <ComA />
     </>
   );
-}
+};
 export default App;
 

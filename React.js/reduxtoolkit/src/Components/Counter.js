@@ -3,17 +3,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { increment, decrement } from "../Store/Slices/counterSlice";
 
 const Counter = () => {
-  let dispatch = useDispatch();
-
-  let { count }  = useSelector((state) => {
+ const dispatch = useDispatch();
+ const { count } = useSelector((state) => {
     return state["counter"];
   });
 
-  let clickIncr = () => {
+ const clickIncr = () => {
     dispatch(increment());
+    
   };
 
-  let clickDecr = () => {
+ const clickDecr = () => {
     dispatch(decrement());
   };
 

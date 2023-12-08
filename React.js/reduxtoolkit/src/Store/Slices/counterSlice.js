@@ -4,7 +4,7 @@ const initialState = {
   count: 0,
 };
 
-let counterSlice = createSlice({
+const counterSlice = createSlice({
   name: "counter",
   initialState: initialState,
   reducers: {

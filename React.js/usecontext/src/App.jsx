@@ -1,10 +1,10 @@
 import React from "react";
-import AppB from "./AppB";
+import AppA from "./AppA";
 
 const App = () => {
   return (
     <>
-      <AppB />
+    <AppA/>
     </>
   );
 };

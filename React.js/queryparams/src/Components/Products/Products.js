@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
 
 const Products = () => {
-  let query = useQuery();
+  function useQuery() {
+    return new URLSearchParams(useLocation().search);
+  }
+  
+  const query = useQuery();
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Products Page</h1>
