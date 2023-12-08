@@ -1,7 +1,5 @@
 const express = require("express");
-const path = require("path");
 const app = express();
-const errorController = require("./controllers/error");
 const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 const User = require("./models/user");
@@ -17,27 +15,16 @@ app.use(express.urlencoded({ extended: false }));
 
 //Finding User by ObjectId
 app.use((req, res, next) => {
-  User.findById("63e1077f47323cb8d2f79a10")
+  User.findById("63f4fb3cb76b2d8ee609a82b")
     .then((user) => {
       //req.user = user;
-      req.user = new User(user.name, user.email, user.cart, user._id);
-      //console.log(req.user._id);
+      req.user = new User(user._id, user.name, user.email, user.cart);
       next();
     })
-    .catch((err) => {
-      console.log(err);
-    });
+    .catch((err) => console.log(err));
 });
 
-app.use("/admin", adminRoutes.router);
+app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
-//Serving file Statically
-app.use(express.static(path.join(__dirname, "public")));
-
-app.get("*", errorController.get404);
-
-mongoConnect((client) => {
-  console.log(client);
-  app.listen(8000);
-});
+mongoConnect(() => app.listen(8000));

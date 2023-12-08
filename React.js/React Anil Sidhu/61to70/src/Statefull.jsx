@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Statefull component in React
 const Statefull = () => {
   const [count, setCount] = useState(0);
 

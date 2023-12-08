@@ -12,44 +12,36 @@ postAddProduct = (req, res, next) => {
   const price = req.body.price;
   const description = req.body.description;
   const product = new Product(
+    null,
     name,
     price,
     description,
     imageUrl,
-    null,
     req.user._id
   );
   product
     .save()
-    .then(() => {
-      console.log("Product Created");
-      res.redirect("/admin/products");
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-  res.redirect("/");
+    .then(() => res.redirect("/admin/products"))
+    .catch((err) => console.log(err));
 };
 
 getEditProduct = (req, res, next) => {
   const editMode = req.query.edit;
   if (!editMode) {
-    return res.redirect("/");
+    return res.redirect("/admin/products");
   }
   const prodId = req.params.productId;
   Product.findById(prodId)
     .then((product) => {
       if (!product) {
-        return res.redirect("/");
+        return res.redirect("/admin/products");
       }
       res.render("admin/edit-product.ejs", {
         product: product,
         editing: editMode,
       });
     })
-    .catch((err) => {
-      console.log(err);
-    });
+    .catch((err) => console.log(err));
 };
 
 postEditProduct = (req, res, next) => {
@@ -59,46 +51,46 @@ postEditProduct = (req, res, next) => {
   const updatedPrice = req.body.price;
   const updatedDescription = req.body.description;
   const product = new Product(
+    prodId,
     updatedname,
     updatedPrice,
     updatedDescription,
     updatedImageUrl,
-    prodId
+    req.user._id
   );
   product
     .save()
-    .then(() => {
-      console.log("Product Updated");
-      return res.redirect("/");
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    .then(() => res.redirect("/admin/products"))
+    .catch((err) => console.log(err));
 };
 
 getProducts = (req, res, next) => {
   Product.fetchAll()
     .then((products) => {
-      res.render("shop/index.ejs", {
+      res.render("admin/products.ejs", {
         products: products,
         hasProducts: products.length > 0,
       });
     })
-    .catch((err) => {
-      console.log(err);
-    });
+    .catch((err) => console.log(err));
+};
+
+getProducts = (req, res, next) => {
+  Product.fetchAll()
+    .then((products) => {
+      res.render("admin/products.ejs", {
+        products: products,
+        hasProducts: products.length > 0,
+      });
+    })
+    .catch((err) => console.log(err));
 };
 
 postDeleteProduct = (req, res, next) => {
   const prodId = req.body.productId;
   Product.deleteById(prodId)
-    .then(() => {
-      console.log("Product Deleted");
-      res.redirect("/admin/products");
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    .then(() => res.redirect("/admin/products"))
+    .catch((err) => console.log(err));
 };
 
 module.exports = {

@@ -15,4 +15,4 @@ router.post('/edit-product', isAuth, AdminController.postEditProduct);
 
 router.post('/delete-product', isAuth, AdminController.postDeleteProduct);
 
-module.exports = { router };
+module.exports = router;

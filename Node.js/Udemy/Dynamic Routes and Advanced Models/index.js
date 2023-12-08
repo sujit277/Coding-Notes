@@ -10,16 +10,13 @@ app.set("views", "views");
 //Using Express Router
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-const adminData = require("./routes/admin");
+const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
-app.use("/admin", adminData.router);
+app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
 //Serving file Statically
 app.use(express.static(path.join(__dirname, "public")));
-
 app.get("*", errorController.get404);
 
-app.listen(8080, () => {
-  console.log("Server Started");
-});
+app.listen(8080, () => console.log("Server Started"));

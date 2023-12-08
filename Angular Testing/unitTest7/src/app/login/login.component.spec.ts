@@ -47,7 +47,7 @@ describe('LoginComponent', () => {
     loginE1.nativeElement.value = 'Sujit Kumar Verma';
     passwordE1.nativeElement.value = '123456';
     component.loggedIn.subscribe((value) => user = value);
-    submitE1.triggerEventHandler('click',null);
+    submitE1.triggerEventHandler('click',null); 
     expect(user.email).toBe('Sujit Kumar Verma');
     expect(user.password).toBe('123456');
   })    

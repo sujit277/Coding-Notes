@@ -23,7 +23,7 @@
     <%- include('../includes/navigation.ejs') %>
     <h1 style="text-align: center">Orders Page</h1>
     <div class="row" style="margin: auto">
-      <% if(orders.length <=0 ){ %>
+      <% if(!orders){ %>
       <h1 style="text-align: center">No Orders Found</h1>
       <%}else{%>
       <ul>
@@ -32,9 +32,9 @@
         <p>
           <% order.products.forEach((product)=>{ %>
           <li><%=product.name%>(<%=product.qauntity%>)</li>
-          <%});%>
+          <%})%>
         </p>
-        <% } %>
+        <% } %> <% } %>
       </ul>
     </div>
   </body>

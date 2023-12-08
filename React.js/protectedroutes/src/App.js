@@ -6,8 +6,7 @@ import Login from "./Components/Login/Login";
 import Signup from "./Components/Signup/Signup";
 import Cart from "./Components/Cart/Cart";
 import Order from "./Components/Order/Order";
-
-function App() {
+const App = () => {
   return (
     <>
       <Navbar></Navbar>
@@ -22,6 +21,6 @@ function App() {
       </BrowserRouter>
     </>
   );
-}
+};
 
 export default App;

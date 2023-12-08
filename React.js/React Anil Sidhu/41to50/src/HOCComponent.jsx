@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
+// Higher Order Component
 const HOCComponent = () => {
   return (
     <>
       <div style={{ textAlign: "center" }}>
         <h1>Higher Order Component</h1>
-        <HOCRed comp={Counter} key="1" />
+        <HOCRed comp={Counter} />
       </div>
-    </>
+    </>  
   );
 };
 

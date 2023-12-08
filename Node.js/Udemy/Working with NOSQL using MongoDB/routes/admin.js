@@ -2,8 +2,6 @@ const express = require("express");
 const router = express.Router();
 const AdminController = require("../controllers/admin");
 
-const products = [];
-
 router.post("/add-product", AdminController.postAddProduct);
 
 router.get("/add-product", AdminController.getAddProduct);
@@ -15,5 +13,5 @@ router.get("/edit-product/:productId", AdminController.getEditProduct);
 router.post("/edit-product", AdminController.postEditProduct);
 
 router.post("/delete-product", AdminController.postDeleteProduct);
-
-module.exports = { router, products };
+    
+module.exports = router;

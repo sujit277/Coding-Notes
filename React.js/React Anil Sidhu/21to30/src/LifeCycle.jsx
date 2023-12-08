@@ -3,53 +3,72 @@ import Destroy from "./Destroy";
 
 //LifeCycle Hooks of React Class Component
 class LifeCycle extends React.Component {
-    constructor() {
-        super();
-        this.state = { count: 0, visible: true };
-        console.log("Constructor is Called");
-    }
+  constructor() {
+    super();
+    this.state = { count: 0, visible: true };
+    console.log("Constructor is Called");
+  }
 
-    increment() {
-        this.setState({ count: this.state.count + 1 })
-    }
+  increment() {
+    this.setState({ count: this.state.count + 1 });
+  }
 
-    componentDidMount() {
-        console.log("ComponentDidMount is Called");
-    }
+  componentWillMount(){
+    console.log('componentWillMount');
+  }
 
-    shouldComponentUpdate() {
-        if (this.state.count < 10) {
-            return true;
-        }
-        else {
-            alert("Maximum Limit is Reached");
-            return false;
-        }
-    }
+  componentDidMount() {
+    console.log("ComponentDidMount is Called");
+  }
 
-    componentDidUpdate(preProps, preState, snapshot) {
-        console.log("ComponentDidUpdate is Called");
-        console.log(preProps);
-        console.log(preState);
-        console.log(snapshot);
+  shouldComponentUpdate() {
+    if (this.state.count < 10) {
+      return true;
+    } else {
+      alert("Maximum Limit is Reached");
+      return false;
     }
+  }
 
-    render() {
-        return (
-            <>
-                <div style={{ textAlign: "center" }}>
-                    <h1>Lifecycle Hooks in React</h1>
-                    {this.state.visible ? (<Destroy />) : null}
-                    <button type="button" onClick={() => { this.setState({ visible: !this.state.visible }) }}>Delete Component</button>
-                    <h1>{this.state.count}</h1>
-                    <button type="button" onClick={() => { this.increment() }}>Increment</button>
-                </div>
-                {
-                    console.log("Render is Called")
-                }
-            </>
-        );
-    }
+  componentWillUpdate(){
+    console.log(`componentWillUpdate`);
+  }
+
+  componentDidUpdate(preProps, preState, snapshot) {
+    console.log("ComponentDidUpdate is Called");
+    console.log(preProps);
+    console.log(preState);
+    console.log(snapshot);
+  }
+
+  render() {
+    return (
+      <>
+        <div style={{ textAlign: "center" }}>
+          <h1>Lifecycle Hooks in React</h1>
+          {this.state.visible ? <Destroy /> : null}
+          <button
+            type="button"
+            onClick={() => {
+              this.setState({ visible: !this.state.visible });
+            }}
+          >
+            Delete Component
+          </button>
+          <h1>{this.state.count}</h1>
+          <button
+            type="button"
+            onClick={() => {
+              this.increment();
+            }}
+          >
+            Increment
+          </button>
+        </div>
+        {console.log("Render is Called")}
+      </>
+    );
+  }
 }
 
 export default LifeCycle;

@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useRef } from "react";
 
-function App() {
+const App = () => {
   const inputref = useRef("Elon Musk");
 
   function handleInput() {
@@ -28,6 +28,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

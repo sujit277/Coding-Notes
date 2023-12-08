@@ -7,7 +7,7 @@ const Products = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
+    useEffect(() => {
     getallProducts();
     setLoading(true);
     setTimeout(() => {
@@ -16,8 +16,8 @@ const Products = () => {
   }, []);
 
   async function getallProducts() {
-    const result = await axios.get("http://localhost:3000/ProductsList");
-    setData(result.data);
+    const products = await axios.get("http://localhost:3000/ProductsList");
+    setData(products.data);
   }
 
   return (

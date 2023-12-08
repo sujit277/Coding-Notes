@@ -9,7 +9,7 @@ const App = () => {
   ];
 
   return (
-    <>
+    <> 
       <div style={{ textAlign: "center" }}>
         <h1>Dynamic Routing</h1>
         {users.map((item) => {

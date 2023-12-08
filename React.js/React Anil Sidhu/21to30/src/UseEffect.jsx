@@ -14,7 +14,7 @@ const UseEffectHook = () => {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h1>UseEffect Hook in React</h1>
+        <h1>UseEffect and UseState Hook in React</h1>
         {visible ? <h1>Sujit Kumar Verma</h1> : null}
         <button
           type="button"

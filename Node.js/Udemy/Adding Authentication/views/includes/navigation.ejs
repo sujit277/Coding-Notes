@@ -1,39 +1,42 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Flipkart</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/"><strong>Home</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/add-product"><strong>Add Product</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/products"><strong>Shop</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cart"><strong>Cart</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/orders"><strong>Orders</strong></a>
-                </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/admin/add-product"><strong>Admin Add Product</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/admin/products"><strong>Admin Products</strong></a>
-                    </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login"><strong>Login</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/signup"><strong>Signup</strong></a>
-                        </li>
-                        <form action="/logout" method="post">
-                            <button type="submit" style="margin-top: 5px;"><strong>Logout</strong></button>
-                        </form>
-            </ul>
-        </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Flipkart</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/"><strong>Home</strong></a>
+        </li>
+        <% if(isAuthenticated){ %>
+        <li class="nav-item">
+          <a class="nav-link" href="/cart"><strong>Cart</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/orders"><strong>Orders</strong></a>
+        </li>
+        <% } %>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/add-product"
+            ><strong>Admin Add Product</strong></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/admin/products"
+            ><strong>Admin Products</strong></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login"><strong>Login</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup"><strong>Signup</strong></a>
+        </li>
+        <form action="/logout" method="post">
+          <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+          <button type="submit" style="margin-top: 5px">
+            <strong>Logout</strong>
+          </button>
+        </form>
+      </ul>
     </div>
+  </div>
 </nav>

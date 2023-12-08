@@ -2,8 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const Cart = require("./cart");
 
-const products = [];
-
 class Product {
   constructor(id, name, imageUrl, price, description) {
     this.id = id;
@@ -20,7 +18,8 @@ class Product {
       if (!err) {
         products = JSON.parse(data);
       }
-      //For the Product Update 
+
+      // Updating Product
       if (this.id) {
         const existingProductIndex = products.findIndex(
           (prod) => prod.id == this.id
@@ -28,14 +27,16 @@ class Product {
         const updatedProducts = [...products];
         updatedProducts[existingProductIndex] = this;
         fs.writeFile(filepath, JSON.stringify(updatedProducts), () => {
-          console.log("Done");
+          console.log("Product Updated");
         });
         return;
       }
+
+      // Saving new Product
       this.id = Math.floor(Math.random() * 101);
       products.push(this);
       fs.writeFile(filepath, JSON.stringify(products), () => {
-        console.log("Done");
+        console.log("Product Saved");
       });
     });
   }
@@ -43,10 +44,10 @@ class Product {
   static fetchAll(callback) {
     const filepath = path.join(__dirname, "../", "data", "database.json");
     fs.readFile(filepath, (err, data) => {
-      if (err) {
-        callback([]);
-      } else {
+      if (!err) {
         callback(JSON.parse(data));
+      } else {
+        callback([]);
       }
     });
   }
@@ -54,12 +55,12 @@ class Product {
   static findById(id, callback) {
     const filepath = path.join(__dirname, "../", "data", "database.json");
     fs.readFile(filepath, (err, data) => {
-      if (err) {
-        callback({});
-      } else {
+      if (!err) {
         const parsedData = JSON.parse(data);
-        const product = parsedData.find((element) => element.id == id);
+        const product = parsedData.find((prod) => prod.id == id);
         callback(product);
+      } else {
+        callback({});
       }
     });
   }
@@ -71,7 +72,7 @@ class Product {
       if (!err) {
         parsedData = JSON.parse(data);
         product = parsedData.filter((prod) => prod.id == id);
-        updatedProducts = parsedData.filter((element) => element.id != id);
+        updatedProducts = parsedData.filter((product) => product.id != id);
       } else {
         return;
       }

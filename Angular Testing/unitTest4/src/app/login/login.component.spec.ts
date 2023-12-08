@@ -21,7 +21,7 @@ describe('LoginComponent', () => {
 
     fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
-    authService = TestBed.get(AuthService);
+    authService = TestBed.inject(AuthService);
     e1 = fixture.debugElement.query(By.css('a'));
     fixture.detectChanges();
   });

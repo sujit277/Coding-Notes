@@ -14,13 +14,13 @@ class Cart {
         }
       }
 
-      //Analyze the Cart and Find Existing Product
+      //Analyze the Cart and check for Existance of Product
       const existingProductIndex = cart.products.findIndex(
         (prodt) => prodt.id == id
       );
       const existingProduct = cart.products[existingProductIndex];
-      let addedProduct;
 
+      let addedProduct;
       //Add New Product and Increase Qauntity
       if (existingProduct) {
         addedProduct = { ...existingProduct };
@@ -33,9 +33,7 @@ class Cart {
       }
       cart.totalPrice = cart.totalPrice + +productprice;
       fs.writeFile(filePath, JSON.stringify(cart), (err) => {
-        if (!err) {
-          return;
-        }
+        console.log('Product added to the cart')
       });
     });
   }
@@ -43,12 +41,12 @@ class Cart {
   static deleteProduct(id, productPrice) {
     const filepath = path.join(__dirname, "../", "data", "cart.json");
     fs.readFile(filepath, (err, data) => {
-      if (err) {
-        return;
-      } else {
+      if (!err) {
         const parsedCartData = JSON.parse(data);
         const updatedCart = { ...parsedCartData };
         const product = updatedCart.products.find((prod) => prod.id == id);
+
+        //Checking requested Product is available in Cart or not
         if (product) {
           const productQty = product.qty;
           updatedCart.products = updatedCart.products.filter((prod) => {
@@ -57,13 +55,13 @@ class Cart {
           updatedCart.totalPrice =
             updatedCart.totalPrice - productPrice * productQty;
           fs.writeFile(filepath, JSON.stringify(updatedCart), (err) => {
-            if (err) {
-              return;
-            }
+            console.log("Product deleted from the cart");
           });
         } else {
           return;
         }
+      } else {
+        return;
       }
     });
   }
@@ -72,10 +70,10 @@ class Cart {
     const filepath = path.join(__dirname, "../", "data", "cart.json");
     fs.readFile(filepath, (err, data) => {
       const cart = JSON.parse(data);
-      if (err) {
-        callback(null);
-      } else {
+      if (!err) {
         callback(cart);
+      } else {
+        callback({});
       }
     });
   }

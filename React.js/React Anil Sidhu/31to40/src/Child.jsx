@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Passing data from child to parent
 const Child = (props) => {
   const [childMessage, setChildMessage] = useState("Assam");
 
@@ -13,7 +14,7 @@ const Child = (props) => {
             props.alertMessage(childMessage);
           }}
         >
-          Pass Data from Parent to Child
+          Pass Data from Child to Parent
         </button>
         <button
           type="button"

@@ -18,17 +18,17 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Protected Component = {Contact} />}>
-            <Route path="india" element={<India/>}/>
-            <Route path="russia" element={<Russia/>} />
+          <Route path="/contact" element={<Protected Component={Contact} />}>
+            <Route path="india" element={<India />} />
+            <Route path="russia" element={<Russia />} />
           </Route>
           <Route path="/service" element={<Service />}></Route>
           <Route path="/service/:name" element={<Service />}></Route>
-          <Route path="*" element={<Error />}></Route>  
+          <Route path="*" element={<Error />}></Route>
         </Routes>
       </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
 export default App;

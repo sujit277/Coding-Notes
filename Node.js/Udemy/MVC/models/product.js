@@ -11,12 +11,11 @@ class Product {
   save() {
     const filepath = path.join(__dirname, "../", "data", "database.json");
     fs.readFile(filepath, (err, data) => {
-      let products = [];
       if (!err) {
-        products = JSON.parse(data);
+        const products = JSON.parse(data);
         products.push(this);
         fs.writeFile(filepath, JSON.stringify(products), () => {
-          console.log("Done");
+          console.log("Product saved successfully");
         });
       } else {
         return;
@@ -27,10 +26,10 @@ class Product {
   static fetchAll(callback) {
     const filepath = path.join(__dirname, "../", "data", "database.json");
     fs.readFile(filepath, (err, data) => {
-      if (err) {
-        callback([]);
-      } else {
+      if (!err) {
         callback(JSON.parse(data));
+      } else {
+        callback([]);
       }
     });
   }

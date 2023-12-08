@@ -10,7 +10,7 @@ const reducer = (state, action) => {
   return state;
 };
 
-function App() {
+const App = () => {
   const [state, dispatch] = useReducer(reducer, 0);
 
   return (
@@ -37,6 +37,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

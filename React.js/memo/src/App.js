@@ -4,11 +4,11 @@ import ComA from "./Components/ComA/ComA";
 import ComB from "./Components/ComB/ComB";
 
 function App() {
-  const [num, setNum] = useState();
+  const [num, setNum] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
-      setNum(2 + 1);
+      setNum(num + 1);
     }, 2000);
   }, []);
 

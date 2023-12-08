@@ -7,7 +7,7 @@ class ImPure extends React.Component {
   }
 
   increment() {
-    this.setState({ count: this.state.count });
+    this.setState({ count: this.state.count + 1 });
   }
 
   render() {
@@ -17,12 +17,7 @@ class ImPure extends React.Component {
         <div style={{ textAlign: "center" }}>
           <h1>ImPure Component</h1>
           <h1>{this.state.count}</h1>
-          <button
-            type="button"
-            onClick={() => {
-              this.increment();
-            }}
-          >
+          <button type="button" onClick={()=> this.increment()}>
             Increment
           </button>
         </div>

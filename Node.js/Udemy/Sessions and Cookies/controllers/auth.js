@@ -1,22 +1,25 @@
 const getLogin = (req, res, next) => {
-    //console.log( req.get('Cookie').split("=")[1] ); 
-    //const isLoggedIn =  req.get('Cookie').split("=")[1] ;
-    //res.render('auth/login', { isAuthenticated: isLoggedIn });
-    console.log(req.session);
-    res.render('auth/login', { isAuthenticated: false });
-}
+  // Accessing Cookie value and passing to the component
+  // const isLoggedIn =  req.get('Cookie').split(";")[1].split("=")[1];
+  // res.render('auth/login', { isAuthenticated: isLoggedIn });
+
+  // Using Session
+  res.render("auth/login", { isAuthenticated: false });
+};
 
 const postLogin = (req, res, next) => {
-    req.session.isLoggedIn = true;
-    //res.setHeader('Set-Cookie', 'loggedIn=true');
-    res.redirect("/");
-}
+  //Setting Cookie 
+  // res.setHeader('Set-Cookie', 'loggedIn=true');
 
+  //Using Session
+  req.session.isLoggedIn = true;
+  res.redirect("/");
+};
 
 const postLogout = (req, res, next) => {
-    req.session.destroy(() => {
-        res.redirect('/');
-    });
-}
+  req.session.destroy(() => {
+    res.redirect("/");
+  });
+};
 
 module.exports = { getLogin, postLogin, postLogout };

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-//import HOCComponent from './HOCComponent';
+import HOCComponent from './HOCComponent';
 import './index.css';
 //import App from './App';
 //import Ref from './Ref';
 //import Useref from './Useref';
 //import ForwardRef from './ForwardRef';
-import Controlled from './Controlled';
+// import Controlled from './Controlled';
 //import UnControlled from './UnControlled';
 //import Menu from './Menu';
 //import App from "./App";
@@ -18,10 +18,9 @@ root.render(
     {/* <Ref/> */}
     {/* <Useref/> */}
     {/* <ForwardRef/> */}
-    <Controlled />
+   {/*  <Controlled /> */}
     {/* <UnControlled/> */}
-    {/* <HOCComponent/> */}
-    {/* <Menu/> */}
+    <HOCComponent/>
     {/* <App/> */}
   </React.StrictMode>
 );

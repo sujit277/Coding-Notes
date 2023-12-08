@@ -11,7 +11,7 @@ postAddProduct = (req, res, next) => {
   const description = req.body.description;
   const product = new Product(name, imageUrl, price, description);
   product.save();
-  res.redirect("/");
+  res.redirect("/admin/products");
 };
 
 getProducts = (req, res, next) => {

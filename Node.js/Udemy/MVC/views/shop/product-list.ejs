@@ -25,8 +25,14 @@
       <div class="row" style="margin: auto">
         <% if(hasProducts){ %> <% for( let item of products){%>
         <div class="col-3">
-          <img src="<%= item.imageUrl %>" class="card-img-top" alt="Image
-          not found" height="300vh" width="100vh">
+          <img
+            src="<%= item.imageUrl %>"
+            class="card-img-top"
+            alt="Image
+          not found"
+            height="300vh"
+            width="100vh"
+          />
           <div class="card-body">
             <h5 class="card-title mt-3"><%= item.name %></h5>
             <p class="card-text"><%= item.description %></p>

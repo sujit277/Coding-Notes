@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Controlled Component
 const Controlled = () => {
   const [name, setName] = useState("Sujit Kumar Verma");
 

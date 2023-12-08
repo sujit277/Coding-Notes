@@ -5,8 +5,8 @@ const GetAPI = () => {
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos/").then((res) => {
-      res.json().then((result) => {
-        setData(result);
+      res.json().then((data) => {
+        setData(data);
       });
     });
   }, []);

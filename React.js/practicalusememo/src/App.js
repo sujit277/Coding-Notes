@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useMemo, useState } from "react";
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0);
   const [item, setItem] = useState(10);
 
@@ -40,6 +40,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

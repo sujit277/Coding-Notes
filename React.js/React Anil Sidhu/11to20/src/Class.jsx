@@ -1,5 +1,6 @@
 import React from "react";
 
+// State Management in class component
 class Class extends React.Component {
   constructor() {
     super();

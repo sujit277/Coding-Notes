@@ -1,5 +1,6 @@
 import React from "react";
 
+// Internal and Inline styling in react
 const Style = () => {
   const style1 = {
     color: "red",

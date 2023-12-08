@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 
+// Uncontrolled Component
 const UnControlled = () => {
   const input1Ref = useRef("");
   const input2Ref = useRef("");
@@ -9,7 +10,7 @@ const UnControlled = () => {
     console.log("Input1 Value " + input1Ref.current.value);
     console.log("Input2 Value " + input2Ref.current.value);
     const input3Ref = document.getElementById("package");
-    console.log("Input1 Value " + input3Ref.value);
+    console.log("Input3 Value " + input3Ref.value);
   }
 
   return (

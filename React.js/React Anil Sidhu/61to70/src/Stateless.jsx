@@ -1,5 +1,6 @@
 import React from "react";
 
+// Stateless component in React
 const Stateless = () => {
   return (
     <>

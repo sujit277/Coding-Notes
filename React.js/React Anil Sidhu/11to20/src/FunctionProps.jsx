@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ComA from "./ComA";
 
+// Functional Component with props
 const FunctionProps = () => {
   const [name, setName] = useState("Sujit Kumar Verma");
 
