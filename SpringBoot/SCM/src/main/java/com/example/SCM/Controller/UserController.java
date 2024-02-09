@@ -35,13 +35,14 @@ public class UserController {
 	public void addCommonData(Model model, Principal principal) {
 		String userName = principal.getName();
 		System.out.println("UserName " + userName);
-		User user = userRepository.getUserByUsername(userName);
+		User user = this.userRepository.getUserByUsername(userName);
 		System.out.println("User" + user);
 		model.addAttribute("user", user);
 	}
 
 	@GetMapping("/dashboard")
 	public String dashboard(Model model, Principal principal) {
+		// Not needed because of common ModelAttribute 
 		// String userName = principal.getName();
 		// System.out.println("UserName "+userName);
 		// User user = userRepository.getUserByUsername(userName);
@@ -77,7 +78,6 @@ public class UserController {
 			session.setAttribute("message", new Message("Something went Wrong", "alert-danger"));
 
 		}
-
 		return "add_contact_form";
 	}
 

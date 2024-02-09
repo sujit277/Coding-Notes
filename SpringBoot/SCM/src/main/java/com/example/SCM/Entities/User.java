@@ -19,7 +19,6 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-
 @Entity
 @Table(name = "User")
 @Component
@@ -44,14 +43,6 @@ public class User {
 	@JsonManagedReference
 	private List<Contact> contacts = new ArrayList<>();
 
-	public List<Contact> getContacts() {
-		return contacts;
-	}
-
-	public void setContacts(List<Contact> contacts) {
-		this.contacts = contacts;
-	}
-
 	public User(int id, String name, String email, String password, String role, boolean enabled, String imageurl,
 			String about, List<Contact> contacts) {
 		super();
@@ -68,6 +59,14 @@ public class User {
 
 	public User() {
 		super();
+	}
+
+	public List<Contact> getContacts() {
+		return contacts;
+	}
+
+	public void setContacts(List<Contact> contacts) {
+		this.contacts = contacts;
 	}
 
 	public int getId() {

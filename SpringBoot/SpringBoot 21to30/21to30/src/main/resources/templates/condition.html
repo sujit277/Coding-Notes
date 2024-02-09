@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1 style="text-align: center">Conditional Statement in thymeLeaf</h1>
+	<h1 style="text-align: center">
+		Use is <span th:text="${isActive} ? 'Active' : 'NotActive'"></span>
+	</h1>
+	<h1 style="text-align: center" th:if="${gender}=='Male'">Male</h1>
+	<h1 style="text-align: center" th:unless="${gender}=='Male'">Female</h1>
+
+	<div style="text-align: center" th:switch="${#lists.size(names)}">
+		<h1 th:case="'0'">List Contains zero Element</h1>
+		<h1 th:case="'1'">List Contains one Element</h1>
+		<h1 th:case="*">List Contains more than one element</h1>
+	</div>
+</body>
+
+</html>

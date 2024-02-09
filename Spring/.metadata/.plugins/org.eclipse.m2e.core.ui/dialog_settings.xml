@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.m2e.core.pom.overview">
-	</section>
-	<section name="org.eclipse.m2e.core.pom.dependencies">
-	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="E:\Advance Java Eclipse\App4\src\main\java\com\test\mvc\DemoController.java"/>
-			<item value="E:\Coding\Spring\OnetoMany\src\main\java\com\Hibernate\OnetoMany\App.java"/>
-			<item value="E:\Coding\Hibernate\OnetoMany\src\main\java\com\hibernate\OnetoOne\Answer.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -32,18 +25,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.Spring.mvc"/>
-			<item value="com.Hibernate.ManytoMany"/>
-			<item value="com.Hibernate.OnetoMany"/>
+			<item value="com.spring.mvc"/>
 		</list>
 		<list key="groupId">
-			<item value="com.Spring.mvc"/>
-			<item value="com.Hibernate"/>
+			<item value="com.spring.mvc"/>
 		</list>
 		<list key="artifactId">
-			<item value="SpringMVC"/>
-			<item value="ManytoMany"/>
-			<item value="OnetoMany"/>
+			<item value="springmvc"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -75,5 +63,17 @@
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

@@ -6,19 +6,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
-			<item value="E:\Coding\Spring\SpringORM"/>
-			<item value="E:\Advance Java Eclipse\App4"/>
-			<item value="E:\Coding\Hibernate\OnetoMany"/>
-			<item value="E:\Coding\Spring\springcore"/>
-			<item value="E:\Coding\Spring"/>
-		</list>
-	</section>
-	<section name="ChooseWorkspaceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="375"/>
-		<item key="DIALOG_Y_ORIGIN" value="185"/>
-	</section>
-	<section name="WORKBENCH_SETTINGS">
-		<list key="ENABLED_TRANSFERS">
+			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Spring71to80\springmvc"/>
+			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Sping61to70\springmvc"/>
+			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Spring51to60\springmvc"/>
+			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Spring41to50\SpringORM"/>
+			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Spring41to50"/>
 		</list>
 	</section>
 </section>

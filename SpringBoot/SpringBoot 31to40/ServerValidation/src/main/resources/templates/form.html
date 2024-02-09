@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class=container-fluid>
+		<div class="row mt-5">
+			<div class="col-4 mx-auto">
+				<h1 style="text-align: center" class="mb-4">Welcome to EPAM</h1>
+				<form th:action="@{/process}" method="post" th:object="${login}">
+					<div class="mb-3">
+						<label for="userName" class="form-label">UserName</label> <input type="text"
+							class="form-control" id="userName" name="userName" th:value="${login.userName}">
+						<p style="color: red;" th:each="e:${#fields.errors('userName')}" th:text="${e}"></p>
+					</div>
+
+					<div class="mb-3">
+						<label for="email" class="form-label">Email</label> <input type="text" class="form-control"
+							id="email" name="email" th:value="${login.email}">
+					</div>
+
+
+					<div style="text-align: center" class="mb-3">
+						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="reset" class="btn btn-primary">Reset</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

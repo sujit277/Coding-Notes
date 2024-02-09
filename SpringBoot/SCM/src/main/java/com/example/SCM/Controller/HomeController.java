@@ -39,7 +39,7 @@ public class HomeController {
 	}
 
 	// Login Route Get Request
-	@GetMapping("/cutlogin")
+	@GetMapping("/login")
 	public String login() {
 		return "login";
 	}

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 //import Function from './Function';
-//import Class from './Class';
+import Class from './Class';
 //import FunctionProps from './FunctionProps';
 //import ClassProps from './ClassProps';
 //import ConditionalRendering from './ConditionalRendering';
@@ -12,10 +12,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/*   <Function /> */}
-    {/* <Class /> */}
+    <Class />
     {/* <FunctionProps /> */}
     {/*  <ClassProps /> */}
     {/* <ConditionalRendering/> */}
-    <Form />
+    {/* <Form /> */}
   </React.StrictMode>
 );

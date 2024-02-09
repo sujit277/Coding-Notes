@@ -1,9 +1,0 @@
-package com.Spring.mvc.Controller;
-
-public class HomeController {
-	
-	public String home() {
-		return "index";
-	}
-
-}

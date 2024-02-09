@@ -8,20 +8,18 @@ public class Student {
 
 	@Id
 	private int id;
-
 	private String name;
-	private String City;
+	private String city;
 
 	public Student(int id, String name, String city) {
 		super();
 		this.id = id;
 		this.name = name;
-		City = city;
+		this.city = city;
 	}
 
 	public Student() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public int getId() {
@@ -41,15 +39,15 @@ public class Student {
 	}
 
 	public String getCity() {
-		return City;
+		return city;
 	}
 
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", City=" + City + "]";
+		return "Student [id=" + id + ", name=" + name + ", City=" + city + "]";
 	}
 }

@@ -18,11 +18,11 @@ public class Address {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int addressId;
 
-	@Column(length = 50, name = "STREET")
+	@Column(length = 50, name = "street")
 	private String street;
 
-	@Column(length = 100, name = "City")
-	private String City;
+	@Column(length = 100, name = "city")
+	private String city;
 	private boolean isOpen;
 
 	@Temporal(TemporalType.DATE)
@@ -35,7 +35,7 @@ public class Address {
 		super();
 		this.addressId = addressId;
 		this.street = street;
-		City = city;
+		this.city = city;
 		this.isOpen = isOpen;
 		this.addedDate = addedDate;
 		this.image = image;
@@ -43,7 +43,6 @@ public class Address {
 
 	public Address() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public int getAddressId() {
@@ -63,11 +62,11 @@ public class Address {
 	}
 
 	public String getCity() {
-		return City;
+		return city;
 	}
 
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
 
 	public boolean isOpen() {
@@ -96,7 +95,7 @@ public class Address {
 
 	@Override
 	public String toString() {
-		return "Address [addressId=" + addressId + ", street=" + street + ", City=" + City + ", isOpen=" + isOpen
+		return "Address [addressId=" + addressId + ", street=" + street + ", City=" + city + ", isOpen=" + isOpen
 				+ ", addedDate=" + "]";
 	}
 }

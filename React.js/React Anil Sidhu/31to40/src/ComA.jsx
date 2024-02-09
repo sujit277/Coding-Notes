@@ -2,7 +2,7 @@ import React from "react";
 
 class ComA extends React.Component {
   constructor(props) {
-    super();
+    super(props);
   }
 
   render() {

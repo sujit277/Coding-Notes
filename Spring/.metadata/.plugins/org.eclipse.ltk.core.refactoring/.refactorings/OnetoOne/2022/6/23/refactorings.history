@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.hibernate.OnetoMany&apos; to &apos;com.hibernate.OnetoOne&apos;&#x0D;&#x0A;- Original project: &apos;OnetoOne&apos;&#x0D;&#x0A;- Original element: &apos;OnetoOne/src/main/java/com.hibernate.OnetoMany&apos;&#x0D;&#x0A;- Renamed element: &apos;OnetoOne/src/main/java/com.hibernate.OnetoOne&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.hibernate.OnetoMany&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hibernate.OnetoMany" name="com.hibernate.OnetoOne" qualified="false" references="true" stamp="1654337721434" textual="false" version="1.0"/>
-</session>

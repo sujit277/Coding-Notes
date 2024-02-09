@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
-@Table(name="Contact")
+@Table(name = "Contact")
 public class Contact {
 
 	@Id
@@ -119,7 +119,5 @@ public class Contact {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	
 
 }
