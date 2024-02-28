@@ -3,10 +3,9 @@ import AppB from "./AppB";
 
 const firstName = createContext("Sujit");
 const lastName = createContext("Verma");
-
 const AppA = () => {
-    return <AppB />
-}
+  return <AppB />;
+};
 
 export default AppA;
 export { firstName, lastName };

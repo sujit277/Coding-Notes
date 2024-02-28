@@ -1,7 +1,7 @@
 import React from "react";
 import { FirstName, LastName } from "./App";
 
-/* Using Create Context API */
+/* Consuming Using Context API */
 
 const ComC = () => {
   return (

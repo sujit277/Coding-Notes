@@ -1,7 +1,7 @@
 import React from "react";
 
 // Stateless component in React
-const Stateless = () => {
+const Stateless = (props) => {
   return (
     <>
       <div style={{ textAlign: "center" }}>
@@ -9,6 +9,7 @@ const Stateless = () => {
         <h1>Sujit Kumar Verma</h1>
         <h1>EPAM Systems</h1>
         <h1>12 LPA</h1>
+        <h1>{props.name}</h1>
       </div>
     </>
   );

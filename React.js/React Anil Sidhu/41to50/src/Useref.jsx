@@ -12,7 +12,7 @@ const Useref = () => {
     <>
       <div style={{ textAlign: "center" }}>
         <h1>UseRef in React</h1>
-        <input type="text" ref={inputRef}></input>
+        <input type="text" name="name" ref={inputRef}></input>
         <button type="button" onClick={handleInput}>
           Handle Input
         </button>

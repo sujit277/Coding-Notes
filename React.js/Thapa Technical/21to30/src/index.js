@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { add, sub, mul, div } from "./Cal";
 
-// Calculator 
+// Calculator
 ReactDOM.render(
   <div style={{ textAlign: "center" }}>
     <ul>
