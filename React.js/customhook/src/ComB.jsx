@@ -1,6 +1,7 @@
 import React from "react";
 import useLocalStorage from "./useLocalStorage";
 
+// Using Custom Hook useLocalStorag to store data in LocalStorage
 const ComB = () => {
   const [name, setName] = useLocalStorage("name", "");
 
