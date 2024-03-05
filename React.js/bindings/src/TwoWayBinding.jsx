@@ -1,30 +1,26 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-const TwoWayBinding = () => {
+function TwoWayBinding() {
   const [name, setName] = useState('');
 
-  function handleChange(event) {
+  const handleInputChange = (event) => {
+    // Update the state variable 'name' with the input value
     setName(event.target.value);
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log(name);
-  }
+  };
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <form onSubmit={(event) => handleSubmit(event)}>
-        <input
-          type="text"
-          value={name}
-          placeholder="Enter your Name"
-          onChange={(event) => handleChange(event)}
-        />
-        <button type="submit">Submit</button>
-      </form>
+    <div>
+      {/* Input field bound to the 'name' state variable */}
+      <input 
+        type="text" 
+        value={name} 
+        onChange={handleInputChange} 
+        placeholder="Enter your name" 
+      />
+      {/* Display the current value of the 'name' state variable */}
+      <p>Hello, {name}</p>
     </div>
   );
-};
+}
 
 export default TwoWayBinding;

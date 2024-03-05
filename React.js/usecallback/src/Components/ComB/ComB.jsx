@@ -1,19 +1,8 @@
 import React from "react";
-import { useEffect, useState } from "react";
 
-const ComB = ({ getItems }) => {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    setItems(getItems());
-    console.log("Child Component is Rendered");
-  }, [getItems]);
-
-  return items.map((item) => (
-    <h1 className="mt-3" key={item}>
-      {item}
-    </h1>
-  ));
+const ComB = ({ onClick }) => {
+  console.log("ChildComponent rendered");
+  return <button onClick={onClick}>Click Me</button>;
 };
 
-export default ComB;
+export default React.memo(ComB);

@@ -28,11 +28,9 @@ import ReactDOM from "react-dom";
 // Code for serving multiple elements in Reactjs using React Fragment
 // ReactDOM.render(
 //   <React.Fragment>
-//     <div style={{ textAlign: "center" }}>
 //       <h1>DLT</h1>
 //       <h1>Accenture</h1>
 //       <h1>EPAM Systems</h1>
-//     </div>
 //   </React.Fragment>,
 //   document.getElementById("root")
 // );
@@ -41,11 +39,9 @@ import ReactDOM from "react-dom";
 // Code for serving multiple elements in Reactjs using short syntax of React Fragment
 // ReactDOM.render(
 //   <>
-//     <div style={{ textAlign: "center" }}>
 //       <h1>DLT</h1>
 //       <h1>Accenture</h1>
 //       <h1>EPAM Systems</h1>
-//     </div>
 //   </>,
 //   document.getElementById("root")
 // );
