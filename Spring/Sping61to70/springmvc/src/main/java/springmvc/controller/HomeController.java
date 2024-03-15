@@ -22,6 +22,7 @@ public class HomeController {
 	public ModelAndView about() {
 		System.out.println("This is about url");
 		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("about");
 		modelAndView.addObject("name","Naveen");
 		List<String> friends = new ArrayList<String>();
 		friends.add("Sujit Kumar Verma");

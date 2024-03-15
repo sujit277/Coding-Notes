@@ -1,7 +1,7 @@
 package com.springcore.ConsInjec;
 
 public class Certificate {
-	
+
 	public String name;
 
 	public Certificate(String name) {
@@ -11,7 +11,7 @@ public class Certificate {
 
 	@Override
 	public String toString() {
-		return this.name ;
+		return this.name;
 	}
-	
+
 }

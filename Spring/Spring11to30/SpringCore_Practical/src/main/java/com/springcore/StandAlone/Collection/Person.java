@@ -4,19 +4,19 @@ import java.util.List;
 
 public class Person {
 	
-	private List<String> frineds;
+	private List<String> friends;
 
-	public List<String> getFrineds() {
-		return frineds;
+	public List<String> getFriends() {
+		return friends;
 	}
 
-	public void setFrineds(List<String> frineds) {
-		this.frineds = frineds;
+	public void setFriends(List<String> friends) {
+		this.friends = friends;
 	}
 
 	@Override
 	public String toString() {
-		return "Person [frineds=" + frineds + "]";
+		return "Person [friends=" + friends + "]";
 	}
 	
 	
