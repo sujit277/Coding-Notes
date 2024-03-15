@@ -15,7 +15,7 @@ http://www.springframework.org/schema/util/spring-util.xsd">
 	</util:list>
 
 	<bean class="com.springcore.StandAlone.Collection.Person" name="person1">
-		<property name="frineds">
+		<property name="friends">
 			<ref bean="StandAlone" />
 		</property>
 	</bean>
