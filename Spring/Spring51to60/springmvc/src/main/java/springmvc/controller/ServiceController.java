@@ -11,6 +11,6 @@ public class ServiceController {
 	public String home(Model m) {
 		m.addAttribute("name","Paypal Singh");
 		System.out.println("This is home page in first url");
-		return "home";	
+		return "home";
 	}
 }

@@ -24,7 +24,7 @@ public class RegisterController {
 
 	@RequestMapping("/register")
 	public String home(Model m) {
-		System.out.println("This is contact url");
+		System.out.println("This is register url");
 		return "register";
 	}
 

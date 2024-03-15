@@ -31,6 +31,7 @@ public class StudentDaoImpl implements StudentDao{
 		int r = this.jdbcTemplate.update(query,studentId);
 		return r;
 	}
+	
 	public Student getStudent(int studentId) {
 		String query = "select * from student where id=?";
 		RowMapper<Student> rowMapper = new RowMapperImpl();

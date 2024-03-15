@@ -13,7 +13,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+
         ApplicationContext context = new ClassPathXmlApplicationContext("com/SpringJDBC/Config.xml");
         //ApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
         /*JdbcTemplate template = context.getBean("jdbcTemplate",JdbcTemplate.class);
