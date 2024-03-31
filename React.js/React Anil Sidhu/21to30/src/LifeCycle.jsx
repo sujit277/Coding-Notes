@@ -14,7 +14,7 @@ class LifeCycle extends React.Component {
   }
 
   componentWillMount(){
-    console.log('componentWillMount');
+    console.log('componentWillMount is Called');
   }
 
   componentDidMount() {
@@ -31,7 +31,7 @@ class LifeCycle extends React.Component {
   }
 
   componentWillUpdate(){
-    console.log(`componentWillUpdate`);
+    console.log(`componentWillUpdate is called`);
   }
 
   componentDidUpdate(preProps, preState, snapshot) {

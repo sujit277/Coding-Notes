@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <ComA count={count} />
-      <ComB handleClick={handleClick} />
+      <ComB handleClick={handleClick} count={count} />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import ComA from "./ComA";
 
-class Pure extends React.PureComponent {
+class Pure extends React.Component {
   constructor() {
     super();
     this.state = { count: 0 };

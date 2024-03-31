@@ -4,7 +4,6 @@ import Child from "./Child";
 // Passing data from parent to child
 const Parent = () => {
   const [count, setCount] = useState(0);
-  const [message, setMessage] = useState("Himachal Pradesh");
 
   function increment() {
     setCount(count + 1);
@@ -24,18 +23,10 @@ const Parent = () => {
         <button
           type="button"
           onClick={() => {
-            alertMessage(message);
+            alertMessage("Sujit");
           }}
         >
           GiveAlertMessage
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            setMessage("Karnataka");
-          }}
-        >
-          Change Message in Parent
         </button>
         <Child alertMessage={alertMessage} count={count} />
       </div>

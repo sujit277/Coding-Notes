@@ -8,7 +8,7 @@ const Map = () => {
       <div style={{ textAlign: "center" }}>
         <h1>Array with Map Operator</h1>
         {data.map((item) => {
-          return <User name={item} />;
+          return <User name={item} key={name} />;
         })}
       </div>
     </>

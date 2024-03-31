@@ -25,7 +25,6 @@ export default App;
 
 /* 
 Memo - 
-It is a way of Creating Pure Components in React
 React.memo is a higher order component. If your component renders the same
 result given the same props, you can wrap it in a call to React.memo for a
 performance boost in some cases by memoizing the result. This means that 

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 // Passing data from child to parent
 const Child = (props) => {
-  const [childMessage, setChildMessage] = useState("Assam");
 
   return (
     <>
@@ -11,18 +10,10 @@ const Child = (props) => {
         <h1>Child Component</h1>
         <button
           onClick={() => {
-            props.alertMessage(childMessage);
+            props.alertMessage("Edward");
           }}
         >
           Pass Data from Child to Parent
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            setChildMessage("Jharkhand");
-          }}
-        >
-          Change Message in Child
         </button>
       </div>
     </>

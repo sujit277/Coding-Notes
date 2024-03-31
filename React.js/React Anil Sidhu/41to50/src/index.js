@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HOCComponent from './HOCComponent';
+
 import './index.css';
-//import App from './App';
+import App from './App';
 //import Ref from './Ref';
 //import Useref from './Useref';
 //import ForwardRef from './ForwardRef';
@@ -20,8 +20,8 @@ root.render(
     {/* <ForwardRef/> */}
    {/*  <Controlled /> */}
     {/* <UnControlled/> */}
-    <HOCComponent/>
-    {/* <App/> */}
+    
+    <App/>
   </React.StrictMode>
 );
 
