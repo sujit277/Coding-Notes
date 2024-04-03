@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Sujit\Documents\Coding-Notes\SpringBoot\SpringBoot 31to40\31to40"/>
+			<item value="C:\Users\Sujit\Documents\Coding-Notes\Hibernate\Hibernate11to20\OnetoOne&amp;OnetoMany"/>
 			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Spring31to40\SpringJDBC"/>
 			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Spring71to80\springmvc"/>
 			<item value="C:\Users\Sujit\Documents\Coding-Notes\Spring\Sping61to70\springmvc"/>
