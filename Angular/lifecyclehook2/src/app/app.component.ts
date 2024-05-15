@@ -1,32 +1,29 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import {Product} from "./product";
+import {User} from "./user";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit{
-  
+export class AppComponent implements OnInit {
   title = 'lifecyclehook2';
-  data:any;
-  email!:string;
-  password!:string;
-  product:Product = new Product();
-  constructor(){}
+  userName: any;
+  email!: string;
+  password!: string;
+  user: User = new User();
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  handleUserName(event: any) {
+    this.userName = event.target.value;
   }
 
-  handleData(event:any){
-    this.data = event.target.value;
+  updateDetail() {
+    //Creating new Object of user for new Reference
+    this.user = new User();
+    this.user.email = this.email;
+    this.user.password = this.password;
   }
-
-  updateDetail(){
-    //Creating new Object of Product for new Reference
-    //this.product = new Product();
-    this.product.email = this.email;
-    this.product.password = this.password;
-  }
-
 }

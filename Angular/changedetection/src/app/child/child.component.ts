@@ -7,18 +7,12 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ChildComponent implements OnInit {
+  constructor() {}
 
-   
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
-
-  executeFunction(){
-    console.log("Executing Child");
+  executeFunction() {
+    console.log('Executing Child');
     return 'Sujit Kumar Verma';
-
   }
-
 }

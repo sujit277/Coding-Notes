@@ -1,17 +1,19 @@
 import { Directive, TemplateRef, ViewContainerRef, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appIf]'
+  selector: '[appIf]',
 })
+
 export class IfDirective {
+  constructor(
+    private template: TemplateRef<any>,
+    private viewContainer: ViewContainerRef
+  ) {}
 
-  constructor(private template: TemplateRef<any>, private viewContainer: ViewContainerRef) { }
-
-  @Input() set appIf(condition:boolean) {
+  @Input() set appIf(condition: boolean) {
     if (condition) {
       this.viewContainer.createEmbeddedView(this.template);
-    }
-    else {
+    } else {
       this.viewContainer.clear();
     }
   }

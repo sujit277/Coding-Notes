@@ -4,27 +4,23 @@ import { ReplaySubject } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit{
-  
+export class AppComponent implements OnInit {
   title = 'relaySubject';
 
   ngOnInit(): void {
     const $replaySubject = new ReplaySubject(3);
-    $replaySubject.next('Hi Sujit');
-    $replaySubject.next('How are you');
-    $replaySubject.next('How is your Mood');
+    $replaySubject.next('1');
+    $replaySubject.next('2');
+    $replaySubject.next('3');
 
-    $replaySubject.subscribe((msg)=>{
-      console.log("User 1",msg);
-    })
+    $replaySubject.subscribe((msg) => {
+      console.log('User 1', msg);
+    });
 
-    $replaySubject.next('Thank you');
-    $replaySubject.next('Good Night');
-    $replaySubject.subscribe((msg => console.log("User2 ",msg)));
-
-
+    $replaySubject.next('4');
+    $replaySubject.next('5');
+    $replaySubject.subscribe((msg) => console.log('User2 ', msg));
   }
-
 }

@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'tdfvalidation';
 
   getdata(data:any){
-    console.log(data.value);
+    console.log(data);
   }
 }

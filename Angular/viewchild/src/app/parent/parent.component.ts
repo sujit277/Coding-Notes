@@ -4,26 +4,23 @@ import { ChildComponent } from '../child/child.component';
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.css']
+  styleUrls: ['./parent.component.css'],
 })
-export class ParentComponent implements OnInit,AfterViewInit {
+export class ParentComponent implements OnInit, AfterViewInit {
+  constructor() {}
 
-  constructor() { }
+  @ViewChild('parentView') parent!: ElementRef;
+  @ViewChild('childView') child!: ChildComponent;
 
-  @ViewChild("highlight") element!:ElementRef
-  @ViewChild("childView") child!:ChildComponent;
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    console.log(this.element);
-    this.element.nativeElement.style.color="red";
-    this.child.element.nativeElement.style.color="green";
+    console.log(this.parent);
+    this.parent.nativeElement.style.color = 'red';
+    this.child.element.nativeElement.style.color = 'green';
   }
 
-  giveAlert(){
+  giveAlert() {
     this.child.childMethod();
   }
-  
 }

@@ -1,13 +1,21 @@
 <div class="container">
-
   <div class="row">
     <div class="col-6 mx-auto">
-      <h1 style="text-align: center;">Custom Pipe for Filtering</h1>
-      <div style="display: flex;margin-bottom: 20px;margin-top: 20px;">
-        <label style="display: inline;" for="search" class="col-form-label mx-5"><strong>Search</strong></label>
-        <input type="text" style="width: 50%;" id="search" name="search" class="form-control" [(ngModel)]="search">
+      <h1 style="text-align: center">Custom Pipe for Filtering</h1>
+      <div style="display: flex; margin-bottom: 20px; margin-top: 20px">
+        <label style="display: inline" for="search" class="col-form-label mx-5"
+          ><strong>Search</strong></label
+        >
+        <input
+          type="text"
+          style="width: 50%"
+          id="search"
+          name="search"
+          class="form-control"
+          [(ngModel)]="search"
+        />
       </div>
-      <h1 style="text-align: center;">{{search}}</h1>
+      <h1 style="text-align: center">{{ search }}</h1>
       <table class="table table-dark table-striped">
         <thead>
           <tr>
@@ -19,14 +27,14 @@
             <th scope="col">Experience</th>
           </tr>
         </thead>
-        <tbody *ngFor="let item of data | search:search;let i = index ">
+        <tbody *ngFor="let item of data | search : search; let i = index">
           <tr>
-            <td>{{i+1}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.age}}</td>
-            <td>{{item.company}}</td>
-            <td>{{item.CTC}}</td>
-            <td>{{item.EXP}}</td>
+            <td>{{ i + 1 }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.company }}</td>
+            <td>{{ item.CTC }}</td>
+            <td>{{ item.EXP }}</td>
           </tr>
         </tbody>
       </table>

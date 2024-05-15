@@ -5,39 +5,15 @@ import { Store } from '@ngrx/store';
 @Component({
   selector: 'app-counterbuttons',
   templateUrl: './counterbuttons.component.html',
-  styleUrls: ['./counterbuttons.component.css']
+  styleUrls: ['./counterbuttons.component.css'],
 })
 export class CounterbuttonsComponent implements OnInit {
+  constructor(private store: Store<{ counter: { counter: number } }>) {}
 
-  /* 
-  @Output() increase = new EventEmitter();
-  @Output() decrease = new EventEmitter();
-  @Output() resetting = new EventEmitter();
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  increment(){
-    this.increase.emit();
-  }
-
-  decrement(){
-    this.decrease.emit();
-  }
-
-  reset(){
-    this.resetting.emit();
-  } 
-  */
-
-  constructor(private store: Store<{ counter: { counter: number } }>) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   increment() {
-    this.store.dispatch(increment())
+    this.store.dispatch(increment());
   }
 
   decrement() {
@@ -47,5 +23,4 @@ export class CounterbuttonsComponent implements OnInit {
   reset() {
     this.store.dispatch(reset());
   }
-
 }

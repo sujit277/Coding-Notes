@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserserviceService {
+  constructor() {}
 
-  constructor() { }
-
-  getuserdata(){
-    return {name:"Sujit Kumar Verma",company:"EPAM Systems"};
+  getuserdata() {
+    return { name: 'Sujit Kumar Verma', company: 'EPAM Systems' };
   }
 }

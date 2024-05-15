@@ -1,29 +1,24 @@
 import { Component, OnChanges, OnInit, SimpleChanges,Input, DoCheck } from '@angular/core';
-import { Product } from '../product';
+import { User } from '../user';
 
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css']
+  styleUrls: ['./child.component.css'],
 })
-export class ChildComponent implements OnInit,OnChanges,DoCheck {
+export class ChildComponent implements OnInit, OnChanges, DoCheck {
+  @Input() userName!: string;
+  @Input() user!: User;
+  constructor() {}
 
-  @Input() parentData!:string;
-  @Input() product!:Product;
-  constructor() { 
-    console.log('Constructor called');
-  }
-  
   ngOnInit(): void {
-    console.log('ngOnInit called');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     console.log('NgOnChanges called');
   }
 
-  ngDoCheck(){
+  ngDoCheck() {
     console.log('NgDocheck is called');
   }
-
 }

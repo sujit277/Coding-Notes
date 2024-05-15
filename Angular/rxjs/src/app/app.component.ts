@@ -27,7 +27,8 @@ export class AppComponent implements OnInit {
   title = 'rxjs';
 
   ngOnInit(): void {
-    // 1. Debounce Time  -
+
+    // 1. debounce Time  -
     // Emits a notification from the source Observable only after a particular time span has passed
     // without another source emission.
     // e.g - debounceTime(dueTime: number, scheduler: asyncScheduler)
@@ -36,21 +37,21 @@ export class AppComponent implements OnInit {
     // const result = clicks.pipe(debounceTime(1000));
     // result.subscribe((x) => console.log(x));
 
-    // 2. FromEvent -
+    // 2. fromEvent -
     // Creates an Observable that emits events of a specific type coming from the given event target.
     // e.g - fromEvent(target: any, eventName: string, options?: EventListner)
 
     // const clicks = fromEvent(document, 'click');
     // clicks.subscribe((x) => console.log(x));
 
-    // 3. DistinctUntilChanged -
+    // 3. distinctUntilChanged -
     // Returns a result Observable that emits all values pushed by the source observable if they are
     // distinct in comparison to the last value the result observable emitted.
 
     // const result = of(1, 1, 1, 2, 2, 2, 1, 1, 3, 3);
     // result.pipe(distinctUntilChanged()).subscribe(console.log);
 
-    // 4. Delay -
+    // 4. delay -
     // Delays the emission of every items from the source Observable by a given timeout or until a given Date.
     // e.g - delay(due: number | Date, scheduler: asyncScheduler)
 
@@ -74,7 +75,7 @@ export class AppComponent implements OnInit {
     // const result = clicks.pipe(last((x) => x % 2 === 0));
     // result.subscribe((x) => console.log(x));
 
-    // 7. DeBounce -
+    // 7. deBounce -
     // Emits a notification from the source Observable only after a particular time span determined by
     // another Observable has passed without another source emission.
 
@@ -82,7 +83,7 @@ export class AppComponent implements OnInit {
     // const result = clicks.pipe(debounce(() => interval(1000)));
     // result.subscribe((x) => console.log(x));
 
-    // 8. TakeUntil -
+    // 8. takeUntil -
     // Emits the values emitted by the source Observable until a notifier Observable emits a value.
 
     // const source = interval(1000);
@@ -130,10 +131,10 @@ export class AppComponent implements OnInit {
     // After given duration, emit numbers in sequence every specified duration.
 
     // const source = timer(6000, 2000);
-    //output: 0,1,2,3,4,5......
+    // output: 0,1,2,3,4,5......
     // const subscribe = source.subscribe((val) => console.log(val));
 
-    //13. CombineLatest -
+    // 13. CombineLatest -
     // Combine multiple Observables to create an observable whose values are calculated from latest
     // values of each of its input observables.
 

@@ -4,10 +4,9 @@ import { concatAll, concatMap, from, map, of } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-
   title = 'concatMap';
 
   getData(data: any) {
@@ -18,22 +17,21 @@ export class AppComponent implements OnInit {
     const source = from(['Tech', 'Comdey', 'News']);
 
     //Printing Values Using Map
-    /* source.pipe(map(data => this.getData(data))).subscribe((res) => {
-      res.subscribe((res1) => {
-        console.log(res1);
-      })
-    }) */
+    // source
+    //   .pipe(map((data) => this.getData(data)))
+    //   .subscribe((res) => res.subscribe((res1) => console.log(res1)));
 
+    //Printing Values Using Map + ConcatAll
+    // source
+    //   .pipe(
+    //     map((data) => this.getData(data)),
+    //     concatAll()
+    //   )
+    //   .subscribe((res) => console.log(res));
 
-    //Printing Values Using SwitchAll
-    /* source.pipe(map(data => this.getData(data)), concatAll()).subscribe((res) => {
-      console.log(res);
-    }) */
-
-    
     //Printing Values Using ConcatMap
-    source.pipe(concatMap(data => this.getData(data))).subscribe((res) => {
-      console.log(res);
-    })
+    source
+      .pipe(concatMap((data) => this.getData(data)))
+      .subscribe((res) => console.log(res));
   }
 } 

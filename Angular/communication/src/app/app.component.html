@@ -1,0 +1,6 @@
+<h1 style="text-align: center">Parent Component</h1>
+<h1 style="text-align: center">{{ parentData }}</h1>
+<app-user
+  (eventEmitterIntance)="parentFunction($event)"
+  [componentName]="componentName"
+></app-user>

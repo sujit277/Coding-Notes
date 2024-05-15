@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-6 mx-auto mt-4">
-      <form #loginform="ngForm" (ngSubmit)="getdata(loginform)">
+      <form #loginform="ngForm" (ngSubmit)="onSubmit(loginform.value)">
         <div class="mb-3">
           <label for="username" class="form-label">UserName</label>
           <input type="username" class="form-control" id="username" name='username' ngModel>

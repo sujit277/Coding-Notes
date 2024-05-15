@@ -3,19 +3,17 @@ import { AfterContentInit, Component, ContentChild, ElementRef, Input, OnInit} f
 @Component({
   selector: 'app-productwidget',
   templateUrl: './productwidget.component.html',
-  styleUrls: ['./productwidget.component.css']
+  styleUrls: ['./productwidget.component.css'],
 })
-export class ProductwidgetComponent implements OnInit,AfterContentInit {
+export class ProductwidgetComponent implements OnInit, AfterContentInit {
+  @Input() products!: any;
+  @ContentChild('head') header!: ElementRef;
+  constructor() {}
 
-  @Input() products!:any; 
-  @ContentChild("head") header!:ElementRef;
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ngAfterContentInit(): void {
     console.log(this.header);
-    this.header.nativeElement.setAttribute('style','color:red');
+    this.header.nativeElement.setAttribute('style', 'color:red');
   }
 }

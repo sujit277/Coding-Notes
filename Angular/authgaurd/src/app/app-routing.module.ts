@@ -7,10 +7,18 @@ import { ServicesComponent } from './components/services/services.component';
 import { AuthguardService } from './services/authguard.service';
 
 const routes: Routes = [
-  {path:'about',component:AboutComponent,canActivate:[AuthguardService]},
-  {path:'',component:HomeComponent},
-  {path:'contact',component:ContactComponent,canActivate:[AuthguardService]},
-  {path:'services',component:ServicesComponent,canActivate:[AuthguardService]}
+  { path: 'about', component: AboutComponent, canActivate: [AuthguardService] },
+  { path: '', component: HomeComponent },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    canActivate: [AuthguardService],
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
+    canActivate: [AuthguardService],
+  },
 ];
 
 @NgModule({

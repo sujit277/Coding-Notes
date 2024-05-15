@@ -1,22 +1,24 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthenticationService {
+  constructor() {}
 
-  constructor() { }
-
-  isLoginned = "isLoginned";
+  isLoginned = 'isLoginned';
 
   //Method for setting LocalStorage after Login
-  login(){
-    localStorage.setItem(this.isLoginned,"true");
+  login() {
+    localStorage.setItem(this.isLoginned, 'true');
   }
 
   //Method for setting LocalStorage after Logout
-  logout(){
-    localStorage.setItem(this.isLoginned,"false");
+  logout() {
+    localStorage.setItem(this.isLoginned, 'false');
   }
 
+  isLogined() {
+    return !!(localStorage.getItem(this.isLoginned) === 'false');
+  }
 }

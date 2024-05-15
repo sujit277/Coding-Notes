@@ -10,6 +10,8 @@ export class AppComponent {
 
   search: any;
   name: any;
+
+  //Async Pipe
   companyName = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('EPAM Systems');
@@ -48,7 +50,7 @@ export class AppComponent {
   ];
 
   addPerson() {
-    let obj = {
+    const obj = {
       name: this.name,
       age: 26,
       company: 'Google',

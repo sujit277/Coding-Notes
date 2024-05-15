@@ -1,0 +1,15 @@
+<h1 style="text-align: center;">Reactive Forms and Validation</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <label>Name:</label>
+    <input type="text" formControlName="name">
+    <div *ngIf="form.controls['name'].invalid && form.controls['name'].touched">Name is required</div>
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="email" formControlName="email">
+    <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched">Invalid email format</div>
+  </div>
+  <button type="submit" [disabled]="form.invalid">Submit</button>
+</form>
+

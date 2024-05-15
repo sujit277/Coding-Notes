@@ -1,15 +1,14 @@
 import { Directive, HostBinding, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appHostBinding]'
+  selector: '[appHostBinding]',
 })
 export class HostBindingDirective {
+  constructor() {}
 
-  constructor() { }
+  @HostBinding('style.color') color!: string;
 
-  @HostBinding('style.color') color!:string; 
-
-  @HostListener('mouseenter') changeColor(){
+  @HostListener('mouseenter') changeColor() {
     this.color = 'red';
   }
 }

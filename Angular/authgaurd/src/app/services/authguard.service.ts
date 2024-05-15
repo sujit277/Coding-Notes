@@ -1,21 +1,22 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationService } from './authentication.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthguardService {
-
-  constructor(private router: Router) { }
-  isLoginned = "isLoginned";
-
-  //Method for Activating and Deactivating Route based on Conditions
+  constructor(
+    private router: Router,
+    private authService: AuthenticationService
+  ) {}
+  
   canActivate() {
     let activate = true;
-    if ((localStorage.getItem(this.isLoginned)) === 'false') {
+    if (this.authService.isLogined()) {
       activate = false;
       alert('Sorry, You are not allowed to use this Feature');
-      this.router.navigate([""]);
+      this.router.navigate(['']);
     }
     return activate;
   }

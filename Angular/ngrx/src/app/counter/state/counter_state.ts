@@ -1,3 +1,3 @@
 export const intialState = {
-    counter:0
-}
+  counter: 0,
+};

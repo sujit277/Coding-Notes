@@ -3,22 +3,20 @@ import { AfterViewInit, Component, OnInit, QueryList, ViewChildren } from '@angu
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit,AfterViewInit{
-
-  @ViewChildren("highlight") element!:QueryList<any>
+export class AppComponent implements OnInit, AfterViewInit {
+  @ViewChildren('highlight') elements!: QueryList<any>;
 
   title = 'viewchildren';
 
   ngOnInit(): void {
-    console.log("Component Loaded");
+    console.log('Component Loaded');
   }
-  
+
   ngAfterViewInit(): void {
-    console.log(this.element);
-    this.element.first.nativeElement.style.color ="red";
-    this.element.last.nativeElement.style.color="green";
+    console.log(this.elements);
+    this.elements.first.nativeElement.style.color = 'red';
+    this.elements.last.nativeElement.style.color = 'green';
   }
-  
 }

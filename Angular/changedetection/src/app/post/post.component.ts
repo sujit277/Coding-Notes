@@ -5,19 +5,21 @@ import { PostServiceService } from '../services/post-service.service';
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PostComponent implements OnInit {
-
   postData!: any;
 
   details = {
-    name: "Sujit Kumar Verma",
-    company: "EPAM Systems",
-    city: "Bokaro Steel City"
-  }
+    name: 'Sujit Kumar Verma',
+    company: 'EPAM Systems',
+    city: 'Bokaro Steel City',
+  };
 
-  constructor(private postService: PostServiceService, private ref: ChangeDetectorRef) { }
+  constructor(
+    private postService: PostServiceService,
+    private ref: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
     this.getData();
@@ -32,21 +34,17 @@ export class PostComponent implements OnInit {
       this.ref.reattach();
       //this.ref.checkNoChanges();
       //this.ref.markForCheck();
-    })
+    });
   }
 
-
   changeObjectValue() {
-   /*  this.details.name = "Chirs Hemtworth",
+    /*  this.details.name = "Chirs Hemtworth",
     this.details.company = "God of Thunder",
     this.details.city = "Australia" */
     this.details = {
-      name: "Priyanka Suman",
-      company: "ADP",
-      city: "Bokaro Steel City"
-    }
+      name: 'Priyanka Suman',
+      company: 'ADP',
+      city: 'Bokaro Steel City',
+    };
   }
-
-  /* Input output event handler ,Async Pipe */
-
 }
