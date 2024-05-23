@@ -28,9 +28,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // 1. debounce Time  -
-    // Emits a notification from the source Observable only after a particular time span has passed
-    // without another source emission.
+    // 1. debounceTime  -
+    //  It delays the emission of items from the source observable by a specified duration.
     // e.g - debounceTime(dueTime: number, scheduler: asyncScheduler)
 
     // const clicks = fromEvent(document, 'click');
@@ -38,15 +37,15 @@ export class AppComponent implements OnInit {
     // result.subscribe((x) => console.log(x));
 
     // 2. fromEvent -
-    // Creates an Observable that emits events of a specific type coming from the given event target.
+    // The fromEvent function in RxJS is used to create an observable from a DOM event.
     // e.g - fromEvent(target: any, eventName: string, options?: EventListner)
 
     // const clicks = fromEvent(document, 'click');
     // clicks.subscribe((x) => console.log(x));
 
     // 3. distinctUntilChanged -
-    // Returns a result Observable that emits all values pushed by the source observable if they are
-    // distinct in comparison to the last value the result observable emitted.
+    // The distinctUntilChanged operator in RxJS is used to filter out consecutive duplicate values emitted by
+    // an observable. It only allows an observable to emit a value if it is different from the previous value.
 
     // const result = of(1, 1, 1, 2, 2, 2, 1, 1, 3, 3);
     // result.pipe(distinctUntilChanged()).subscribe(console.log);
@@ -76,15 +75,15 @@ export class AppComponent implements OnInit {
     // result.subscribe((x) => console.log(x));
 
     // 7. deBounce -
-    // Emits a notification from the source Observable only after a particular time span determined by
-    // another Observable has passed without another source emission.
+    // debounce operator in RxJS is used to delay the emissions of items from the source observable until a 
+    // specified duration has passed since the last emission.
 
     // const clicks = fromEvent(document, 'click');
     // const result = clicks.pipe(debounce(() => interval(1000)));
     // result.subscribe((x) => console.log(x));
 
     // 8. takeUntil -
-    // Emits the values emitted by the source Observable until a notifier Observable emits a value.
+    // takeUntil operator in RxJS is used to complete an observable when another observable emits a value.
 
     // const source = interval(1000);
     // const clicks = fromEvent(document, 'click');
@@ -118,8 +117,8 @@ export class AppComponent implements OnInit {
     // constant interval of time of your choosing between those emissions.
 
     // 11. skipUntil -
-    // Skip emitted values from source until provided observable emits.
-
+    // skipUntil operator in RxJS is used to discard items emitted by the source observable until a second 
+    // observable, the notifier, emits its first item.
     // emit every 1s
     // const source = interval(1000);
     // skip emitted values from source until inner observable emits (6s)
@@ -135,7 +134,9 @@ export class AppComponent implements OnInit {
     // const subscribe = source.subscribe((val) => console.log(val));
 
     // 13. CombineLatest -
-    // Combine multiple Observables to create an observable whose values are calculated from latest
+    // The combineLatest operator in RxJS is used to combine multiple observables and emit the latest values 
+    // from each as an array (or object if using named parameters) whenever any of the source observables emit
+    // a value.
     // values of each of its input observables.
 
     // 1. Define multiple observables
