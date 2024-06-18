@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 
 const Derived = () => {
   const [count, setCount] = useState(0);

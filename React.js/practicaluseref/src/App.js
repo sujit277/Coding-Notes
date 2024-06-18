@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useRef } from "react";
 
 const App = () => {
-  const inputref = useRef("Elon Musk");
+  const inputref = useRef(null);
 
   function handleInput() {
     inputref.current.value = "Sujit";

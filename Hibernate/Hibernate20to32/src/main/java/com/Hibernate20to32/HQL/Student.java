@@ -21,7 +21,7 @@ public class Student {
 		super();
 		this.id = id;
 		this.name = name;
-		City = city;
+		this.City = city;
 	}
 
 	public Student() {
@@ -50,7 +50,7 @@ public class Student {
 	}
 
 	public void setCity(String city) {
-		City = city;
+		this.City = city;
 	}
 
 	@Override

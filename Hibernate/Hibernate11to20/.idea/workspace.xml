@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="09189a21-253b-457f-a7cd-74223b8b15b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Hibernate1to10/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate1to10/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate1to10/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate1to10/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate1to10/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hibernate1to10/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/Class.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/EventBind.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/Functional.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/Indexaskeys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/Listrendering.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/Props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/Setstate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/1to20/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/LifeCycle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/LifecycleA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/LifecycleB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Codevolution/21to40/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/Class.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/ClassProps.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/ComA.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/ComB.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/ConditionalRendering.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/Form.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/Function.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/FunctionProps.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/11to20/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/Class.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/1to10/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/ComA.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/ConstructorandRender.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/Destroy.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/FunctionAsProps.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/LifeCycle.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/UseEffect.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/21to30/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/Child.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/ComA.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/ImPure.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/Map.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/Parent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/Pure.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/Style.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/User.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/31to40/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/About.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/ComA.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Contact.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Controlled.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Error.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/ForwardRef.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Menu.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Ref.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Service.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/UnControlled.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/Useref.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/41to50/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/About.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/Contact.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/Error.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/India.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/Menu.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/Protected.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/Russia.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/Service.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/51to60/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/GetAPI.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/Main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/Statefull.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/Stateless.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/User.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/React Anil Sidhu/61to70/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/11to20/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/1to10/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/Cal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/21to30/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/31to40/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/41to50/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/Thapa Technical/51to60/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React.js/useparams" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2h3FA3HGJC1TSxlLWZuquidhalr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sujitkumar_Verma/Documents/Skills Matrix/Coding-Notes/Hibernate/Hibernate11to20/OnetoOne&OnetoMany"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09189a21-253b-457f-a7cd-74223b8b15b2" name="Changes" comment="" />
+      <created>1716814706634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716814706634</updated>
+    </task>
+    <servers />
+  </component>
+</project>

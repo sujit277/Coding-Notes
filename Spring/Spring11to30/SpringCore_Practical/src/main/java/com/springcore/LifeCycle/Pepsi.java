@@ -4,7 +4,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
 public class Pepsi implements InitializingBean,DisposableBean {
-	
+
 	private double price;
 
  	public double getPrice() {
