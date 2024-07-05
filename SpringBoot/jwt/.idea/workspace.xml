@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b71e967a-308d-49a9-a854-5efc41f13689" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/src/main/java/com/api_gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/api-gateway/src/test/java/com/api_gateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/src/main/java/com/discoveryServer/DiscoveryServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/discovery-server/src/test/java/com/discoveryServer/DiscoveryServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/main/java/com/inventory_service/InventoryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/main/java/com/inventory_service/controller/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/main/java/com/inventory_service/dto/InventoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/main/java/com/inventory_service/model/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/main/java/com/inventory_service/repository/InventoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/main/java/com/inventory_service/service/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/inventory-service/src/test/java/com/inventory_service/InventoryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/OrderServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/dto/InventoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/dto/OrderLineItemsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/dto/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/dto/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/model/OrderLineItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/java/com/order_service/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/order-service/src/test/java/com/order_service/OrderServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/java/com/product_service/ProductServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/java/com/product_service/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/java/com/product_service/dto/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/java/com/product_service/dto/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/java/com/product_service/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/java/com/product_service/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/java/com/product_service/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 1/product-service/src/test/java/com/product_service/ProductServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservices/Project 3/hotel-service/src/main/java/com/hotel_service/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/ApiGateway.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/src/main/java/com/gatway/ApiGatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ApiGateway/ApiGateway/src/test/java/com/gatway/ApiGatewayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/src/main/java/com/inventory_service/InventoryServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/src/main/java/com/inventory_service/controller/InventoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/src/main/java/com/inventory_service/model/Inventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/src/main/java/com/inventory_service/repository/InventoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/src/main/java/com/inventory_service/service/InventoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/inventory-service/src/test/java/com/inventory_service/InventoryServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/src/main/java/com/order_service/OrderServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/order-service/src/test/java/com/order_service/OrderServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/OrderServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/dto/OrderLineItemsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/dto/OrderRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/dto/OrderResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/model/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/model/OrderLineItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/repository/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/java/com/order_service/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/order-service/src/test/java/com/order_service/OrderServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/src/main/java/com/product_service/ProductServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/product-service/src/test/java/com/product_service/ProductServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/java/com/product_service/ProductServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/java/com/product_service/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/java/com/product_service/dto/ProductRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/java/com/product_service/dto/ProductResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/java/com/product_service/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/java/com/product_service/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/java/com/product_service/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/Project/product-service/src/test/java/com/product_service/ProductServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/main/java/com/question/QuestionServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/main/java/com/question/controllers/QuestionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/main/java/com/question/entities/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/main/java/com/question/repositories/QuestionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/main/java/com/question/services/QuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/main/java/com/question/services/QuestionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuestionService/src/test/java/com/question/QuestionServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/QuizServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/controllers/QuizController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/entities/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/entities/Quiz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/repositories/QuizRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/services/QuestionClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/services/QuizService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/java/com/quiz/services/QuizServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/QuizService/src/test/java/com/quiz/QuizServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/src/main/java/com/registry/ServiceRegistryApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservices/ServiceRegistry/src/test/java/com/registry/ServiceRegistryApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2iF9V5jwZWH74ZQpqKfgrkqkfTJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sujitkumar_Verma/Documents/Skills Matrix/Coding-Notes/Microservices/Project 1/product-service"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b71e967a-308d-49a9-a854-5efc41f13689" name="Changes" comment="" />
+      <created>1719075479039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719075479039</updated>
+    </task>
+    <servers />
+  </component>
+</project>
